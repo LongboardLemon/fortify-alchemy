@@ -1,9 +1,19 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.org/docs/gatsby-config/
- */
-
 module.exports = {
-  /* Your site config here */
-}
+    siteMetadata: {
+        title: "Fortify Alchemy",
+    },
+    plugins: [
+        {
+            resolve: "gatsby-transformer-json",
+            options: {
+                typeName: ({ node, object }) => object.effects ? "ingredientsJson" : "effectsJson",
+            },
+        },
+        {
+            resolve: "gatsby-source-filesystem",
+            options: {
+                path: "./src/data/",
+            },
+        },
+    ]
+};

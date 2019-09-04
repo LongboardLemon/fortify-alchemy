@@ -1,0 +1,761 @@
+[
+    {
+        "description": "Causes the target's vision to be obscured, making it harder for them to see.",
+        "effect": "Blind M% for D seconds",
+        "ingredients": [
+            "Durzog Meat",
+            "Bristleback Leather"
+        ],
+        "name": "Blind",
+        "poison": true
+    }, {
+        "description": "Increases the target's encumbrance by M points for D seconds.",
+        "effect": "Burden M points for D seconds",
+        "ingredients": [
+            "Adamantium Ore",
+            "Gold Kanet",
+            "Resin",
+            "Scrib Jerky"
+        ],
+        "name": "Burden",
+        "poison": true
+    }, {
+        "description": "Removes the effects of Blight Diseases from the target.",
+        "effect": "Cure Blight Disease",
+        "ingredients": [
+            "Ash Salts",
+            "Meteor Slime",
+            "Scrib Jelly"
+        ],
+        "name": "Cure Blight Disease"
+    }, {
+        "description": "Removes the effects of Common Diseases from the target.",
+        "effect": "Cure Common Disease",
+        "ingredients": [
+            "Chokeweed",
+            "Daedra Skin",
+            "Gravedust",
+            "Green Lichen",
+            "Muck",
+            "Red Lichen",
+            "Willow Anther"
+        ],
+        "name": "Cure Common Disease"
+    }, {
+        "description": "Cures the target of the effects of Paralyzation.",
+        "effect": "Cure Paralyzation",
+        "ingredients": [
+            "Corkbulb Root",
+            "Netch Leather",
+            "Scamp Skin",
+            "Willow Anther"
+        ],
+        "name": "Cure Paralyzation"
+    }, {
+        "description": "Dispels any long-duration Poison effects currently affecting the target.",
+        "effect": "Cure Poison",
+        "ingredients": [
+            "Black Lichen",
+            "Ghoul Heart",
+            "Meteor Slime",
+            "Rat Meat",
+            "Raw Ebony",
+            "Roobrush",
+            "Scathecraw",
+            "Scrib Jelly"
+        ],
+        "name": "Cure Poison"
+    }, {
+        "description": "Permanently lowers the Fatigue of the target by M points. If the target's Fatigue is reduced below 0, they will pass out and collapse to the ground.",
+        "effect": "Damage Fatigue M points",
+        "ingredients": [
+            "Poison"
+        ],
+        "name": "Damage Fatigue",
+        "poison": true
+    }, {
+        "description": "Permanently lowers the Health of the target by M points. Note that this does not affect maximum health.",
+        "effect": "Damage Health M points",
+        "ingredients": [
+            "Meadow Rye",
+            "Nirthfly Stalks",
+            "Noble Sedge Flowers",
+            "Poison",
+            "Scrib Cabbage"
+        ],
+        "name": "Damage Health",
+        "poison": true
+    }, {
+        "effect": "Damage Intelligence M points for D seconds",
+        "ingredients": [
+            "Wickwheat"
+        ],
+        "name": "Damage Intelligence",
+        "poison": true
+    }, {
+        "effect": "Damage Magicka M points for D seconds",
+        "ingredients": [
+            "Durzog Meat"
+        ],
+        "name": "Damage Magicka",
+        "poison": true
+    }, {
+        "ingredients": [
+            "Alit Hide",
+            "Ampoule Pod",
+            "Bloat",
+            "Ectoplasm",
+            "Horker Tusk"
+        ],
+        "name": "Detect Animal"
+    }, {
+        "ingredients": [
+            "Hound Meat",
+            "Hypha Facia",
+            "Lloramor Spines",
+            "Marshmerrow"
+        ],
+        "name": "Detect Enchantment"
+    }, {
+        "ingredients": [
+            "Ash Yam",
+            "Diamond",
+            "Muck",
+            "Spore Pod"
+        ],
+        "name": "Detect Key"
+    }, {
+        "ingredients": [
+            "Bungler's Bane",
+            "Pearl",
+            "Moon Sugar",
+            "Timsa-Come-By flowers"
+        ],
+        "name": "Dispel"
+    }, {
+        "ingredients": [
+            "Horker Tusk"
+        ],
+        "name": "Drain Alteration",
+        "poison": true
+    }, {
+        "ingredients": [
+            "Ash Salts",
+            "Black Anther",
+            "Daedra's Heart",
+            "Diamond",
+            "Emerald",
+            "Hypha Facia",
+            "Pearl",
+            "Raw Ebony",
+            "Ruby"
+        ],
+        "name": "Drain Agility",
+        "poison": true
+    }, {
+        "ingredients": [
+            "Bittergreen Petals",
+            "Black Anther",
+            "Bungler's Bane",
+            "Emerald",
+            "Moon Sugar",
+            "Void Salts",
+            "Wolfsbane Petals"
+        ],
+        "name": "Drain Endurance",
+        "poison": true
+    }, {
+        "ingredients": [
+            "Bear Pelt",
+            "Bonemeal",
+            "Comberry",
+            "Corprus Weepings",
+            "Guar Hide",
+            "Hypha Facia",
+            "Kagouti Hide",
+            "Kwama Cuttle",
+            "Large Corprusmeat Hunk",
+            "Large Wrapped Corprusmeat",
+            "Luminous Russula",
+            "Marshmerrow",
+            "Medium Corprusmeat Hunk",
+            "Medium Wrapped Corprusmeat",
+            "Shalk Resin",
+            "Small Corprusmeat Hunk",
+            "Small Wrapped Corprusmeat",
+            "Snow Bear Pelt",
+            "Snow Wolf Pelt",
+            "Spore Pod",
+            "Violet Coprinus",
+            "Wolf Pelt",
+            "Wrapped Corprusmeat Hunk"
+        ],
+        "name": "Drain Fatigue",
+        "poison": true
+    }, {
+        "ingredients": [
+            "Coda Flower",
+            "Ectoplasm",
+            "Fire Petal",
+            "Fire Salts",
+            "Gold Kanet",
+            "Gravetar",
+            "Green Lichen",
+            "Horn Lily Bulb",
+            "Large Corprusmeat Hunk",
+            "Large Wrapped Corprusmeat",
+            "Medium Corprusmeat Hunk",
+            "Medium Wrapped Corprusmeat",
+            "Roobrush",
+            "Ruby",
+            "Scathecraw",
+            "Scrap Metal",
+            "Small Corprusmeat Hunk",
+            "Small Wrapped Corprusmeat",
+            "Wrapped Corprusmeat Hunk"
+        ],
+        "name": "Drain Health",
+        "poison": true
+    }, {
+        "ingredients": [
+            "Alit Hide",
+            "Coda Flower",
+            "Gravedust",
+            "Human Flesh",
+            "Muck",
+            "Raw Glass",
+            "Scrib Cabbage"
+        ],
+        "name": "Drain Intelligence",
+        "poison": true
+    }, {
+        "ingredients": [
+            "Chokeweed",
+            "Dreugh Wax",
+            "Gold Kanet",
+            "Gravetar",
+            "Hypha Facia",
+            "Moon Sugar",
+            "Stoneflower Petals"
+        ],
+        "name": "Drain Luck",
+        "poison": true
+    }, {
+        "ingredients": [
+            "Belladonna Berries",
+            "Bittergreen Petals",
+            "Bloat",
+            "Golden Sedge Flowers",
+            "Grahl Eyeball",
+            "Gravedust",
+            "Kresh Fiber",
+            "Large Corprusmeat Hunk",
+            "Large Wrapped Corprusmeat",
+            "Medium Corprusmeat Hunk",
+            "Medium Wrapped Corprusmeat",
+            "Rat Meat",
+            "Red Lichen",
+            "Scamp Skin",
+            "Small Corprusmeat Hunk",
+            "Small Wrapped Corprusmeat",
+            "Timsa-Come-By flowers",
+            "Trama Root",
+            "Wolfsbane Petals",
+            "Wrapped Corprusmeat Hunk"
+        ],
+        "name": "Drain Magicka",
+        "poison": true
+    }, {
+        "ingredients": [
+            "Bonemeal",
+            "Coda Flower",
+            "Heather",
+            "Human Flesh",
+            "Muck",
+            "Netch Leather",
+            "Scales",
+            "Shalk Resin",
+            "Sload Soap",
+            "Willow Anther"
+        ],
+        "name": "Drain Personality",
+        "poison": true
+    }, {
+        "ingredients": [
+            "Black Lichen",
+            "Bungler's Bane",
+            "Frost Salts",
+            "Heather",
+            "Kresh Fiber",
+            "Meadow Rye",
+            "Nirthfly Stalks",
+            "Raw Glass",
+            "Red Lichen",
+            "Trama Root"
+        ],
+        "name": "Drain Speed",
+        "poison": true
+    }, {
+        "ingredients": [
+            "Black Lichen",
+            "Bungler's Bane",
+            "Ectoplasm",
+            "Green Lichen",
+            "Heartwood",
+            "Raw Glass",
+            "Saltrice",
+            "Scathecraw",
+            "Spore Pod"
+        ],
+        "name": "Drain Strength",
+        "poison": true
+    }, {
+        "ingredients": [
+            "Ampoule Pod",
+            "Chokeweed",
+            "Corprus Weepings",
+            "Dreugh Wax",
+            "Marshmerrow",
+            "Racer Plumes",
+            "Roobrush"
+        ],
+        "name": "Drain Willpower",
+        "poison": true
+    }, {
+        "ingredients": [
+            "Heather",
+            "Ruby",
+            "Scuttle"
+        ],
+        "name": "Feather"
+    }, {
+        "ingredients": [
+            "Comberry",
+            "Fire Salts",
+            "Raw Glass",
+            "Sload Soap"
+        ],
+        "name": "Fire Shield"
+    }, {
+        "ingredients": [
+            "Durzog Meat",
+            "Ectoplasm",
+            "Fire Salts",
+            "Heartwood",
+            "Noble Sedge Flowers",
+            "Roobrush",
+            "Scrib Cabbage",
+            "Sload Soap"
+        ],
+        "name": "Fortify Agility"
+    }, {
+        "ingredients": [
+            "Ghoul Heart",
+            "Golden Sedge Flowers"
+        ],
+        "name": "Fortify Attack"
+    }, {
+        "ingredients": [
+            "Daedra's Heart",
+            "Guar Hide",
+            "Netch Leather"
+        ],
+        "name": "Fortify Endurance"
+    }, {
+        "ingredients": [
+            "Gravetar",
+            "Hound Meat",
+            "Scrib Jerky",
+            "Scuttle"
+        ],
+        "name": "Fortify Fatigue"
+    }, {
+        "ingredients": [
+            "Human Flesh",
+            "Large Kwama Egg",
+            "Shalk Resin",
+            "Vampire Dust"
+        ],
+        "name": "Fortify Health"
+    }, {
+        "ingredients": [
+            "Ash Yam",
+            "Bloat",
+            "Horker Tusk",
+            "Netch Leather"
+        ],
+        "name": "Fortify Intelligence"
+    }, {
+        "ingredients": [
+            "Corkbulb Root",
+            "Corprus Weepings",
+            "Guar Hide"
+        ],
+        "name": "Fortify Luck"
+    }, {
+        "ingredients": [
+            "Belladonna Berries",
+            "Emerald",
+            "Saltrice",
+            "Stoneflower Petals"
+        ],
+        "name": "Fortify Magicka"
+    }, {
+        "ingredients": [
+            "Horker Tusk"
+        ],
+        "name": "Fortify Maximum Magicka"
+    }, {
+        "ingredients": [
+            "Green Lichen",
+            "Kresh Fiber",
+            "Stoneflower Petals"
+        ],
+        "name": "Fortify Personality"
+    }, {
+        "ingredients": [
+            "Kagouti Hide",
+            "Meadow Rye",
+            "Moon Sugar",
+            "Nirthfly Stalks",
+            "Shalk Resin",
+            "Snow Bear Pelt",
+            "Snow Wolf Pelt",
+            "Wolf Pelt"
+        ],
+        "name": "Fortify Speed"
+    }, {
+        "ingredients": [
+            "Ash Yam",
+            "Bear Pelt",
+            "Daedra Skin",
+            "Dreugh Wax",
+            "Durzog Meat",
+            "Golden Sedge Flowers",
+            "Grahl Eyeball",
+            "Vampire Dust"
+        ],
+        "name": "Fortify Strength"
+    }, {
+        "ingredients": [
+            "Bloat",
+            "Meteor Slime",
+            "Scrib Jelly",
+            "Wickwheat"
+        ],
+        "name": "Fortify Willpower"
+    }, {
+        "ingredients": [
+            "Bristleback Leather",
+            "Holly Berries",
+            "Raw Stalhrim"
+        ],
+        "name": "Frost Damage",
+        "poison": true
+    }, {
+        "ingredients": [
+            "Frost Salts",
+            "Holly Berries",
+            "Large Kwama Egg",
+            "Raw Ebony",
+            "Willow Anther"
+        ],
+        "name": "Frost Shield"
+    }, {
+        "ingredients": [
+            "Bittergreen Petals",
+            "Diamond",
+            "Lloramor Spines",
+            "Wolfsbane Petals"
+        ],
+        "name": "Invisibility"
+    }, {
+        "ingredients": [
+            "Coda Flower",
+            "Racer Plumes",
+            "Sweetpulp",
+            "Trama Root"
+        ],
+        "name": "Levitate"
+    }, {
+        "ingredients": [
+            "Black Anther",
+            "Red Lichen"
+        ],
+        "name": "Light"
+    }, {
+        "ingredients": [
+            "Corkbulb Root",
+            "Crab Meat",
+            "Scrap Metal"
+        ],
+        "name": "Lightning Shield"
+    }, {
+        "ingredients": [
+            "Bear Pelt",
+            "Grahl Eyeball",
+            "Kagouti Hide",
+            "Daedra's Heart",
+            "Snow Bear Pelt",
+            "Snow Wolf Pelt",
+            "Wolf Pelt"
+        ],
+        "name": "Night Eye"
+    }, {
+        "ingredients": [
+            "Ampoule Pod",
+            "Daedra Skin",
+            "Fire Petal",
+            "Ghoul Heart",
+            "Hackle-Lo Leaf",
+            "Large Kwama Egg",
+            "Rat Meat",
+            "Raw Stalhrim",
+            "Spore Pod",
+            "Sweetpulp",
+            "Void Salts",
+            "Wickwheat"
+        ],
+        "name": "Paralyze",
+        "poison": true
+    }, {
+        "ingredients": [
+            "Adamantium Ore",
+            "Lloramor Spines",
+            "Luminous Russula",
+            "Noble Sedge Flowers",
+            "Poison",
+            "Violet Coprinus"
+        ],
+        "name": "Poison",
+        "poison": true
+    }, {
+        "ingredients": [
+            "Bristleback Leather"
+        ],
+        "name": "Recall"
+    }, {
+        "ingredients": [
+            "Adamantium Ore",
+            "Comberry",
+            "Diamond",
+            "Hound Meat"
+        ],
+        "name": "Reflect"
+    }, {
+        "ingredients": [
+            "Ash Yam",
+            "Bear Pelt",
+            "Kagouti Hide",
+            "Pearl",
+            "Resin",
+            "Snow Bear Pelt",
+            "Snow Wolf Pelt",
+            "Wolf Pelt"
+        ],
+        "name": "Resist Common Disease"
+    }, {
+        "ingredients": [
+            "Black Anther",
+            "Fire Petal",
+            "Frost Salts"
+        ],
+        "name": "Resist Fire"
+    }, {
+        "ingredients": [
+            "Black Lichen",
+            "Bristleback Leather",
+            "Fire Salts",
+            "Grahl Eyeball",
+            "Gravetar",
+            "Holly Berries",
+            "Raw Stalhrim"
+        ],
+        "name": "Resist Frost"
+    }, {
+        "ingredients": [
+            "Ash Salts",
+            "Belladonna Berries"
+        ],
+        "name": "Resist Magicka"
+    }, {
+        "ingredients": [
+            "Horn Lily Bulb",
+            "Timsa-Come-By flowers",
+            "Sweetpulp"
+        ],
+        "name": "Resist Paralysis"
+    }, {
+        "ingredients": [
+            "Alit Hide",
+            "Kwama Cuttle",
+            "Rat Meat"
+        ],
+        "name": "Resist Poison"
+    }, {
+        "ingredients": [
+            "Crab Meat",
+            "Scrap Metal"
+        ],
+        "name": "Resist Shock"
+    }, {
+        "ingredients": [
+            "Bonemeal",
+            "Noble Sedge Flowers",
+            "Scrib Cabbage",
+            "Sload Soap"
+        ],
+        "name": "Restore Agility"
+    }, {
+        "ingredients": [
+            "Gravedust",
+            "Horn Lily Bulb",
+            "Timsa-Come-By flowers",
+            "Scales"
+        ],
+        "name": "Restore Endurance"
+    }, {
+        "ingredients": [
+            "Bread",
+            "Chokeweed",
+            "Crab Meat",
+            "Hackle-Lo Leaf",
+            "Hound Meat",
+            "Large Kwama Egg",
+            "Saltrice",
+            "Scrib Jerky",
+            "Scuttle",
+            "Small Kwama Egg"
+        ],
+        "name": "Restore Fatigue"
+    }, {
+        "ingredients": [
+            "Corkbulb Root",
+            "Corprus Weepings",
+            "Emerald",
+            "Marshmerrow",
+            "Raw Stalhrim",
+            "Resin",
+            "Saltrice",
+            "Sweetpulp",
+            "Wickwheat"
+        ],
+        "name": "Restore Health"
+    }, {
+        "ingredients": [
+            "Bittergreen Petals",
+            "Ruby",
+            "Scrap Metal",
+            "Wolfsbane Petals"
+        ],
+        "name": "Restore Intelligence"
+    }, {
+        "ingredients": [
+            "Crab Meat",
+            "Hackle-Lo Leaf",
+            "Kresh Fiber"
+        ],
+        "name": "Restore Luck"
+    }, {
+        "ingredients": [
+            "Adamantium Ore",
+            "Belladonna Berries",
+            "Comberry",
+            "Daedra's Heart",
+            "Frost Salts",
+            "Heartwood",
+            "Void Salts"
+        ],
+        "name": "Restore Magicka"
+    }, {
+        "ingredients": [
+            "Guar Hide",
+            "Heather",
+            "Scamp Skin"
+        ],
+        "name": "Restore Personality"
+    }, {
+        "ingredients": [
+            "Meadow Rye",
+            "Nirthfly Stalks",
+            "Raw Ebony",
+            "Resin"
+        ],
+        "name": "Restore Speed"
+    }, {
+        "ingredients": [
+            "Dreugh Wax",
+            "Gold Kanet",
+            "Horn Lily Bulb",
+            "Scamp Skin",
+            "Stoneflower Petals"
+        ],
+        "name": "Restore Strength"
+    }, {
+        "ingredients": [
+            "Meteor Slime",
+            "Scathecraw",
+            "Scrib Jelly",
+            "Trama Root"
+        ],
+        "name": "Restore Willpower"
+    }, {
+        "ingredients": [
+            "Fire Petal",
+            "Lloramor Spines",
+            "Vampire Dust",
+            "Void Salts"
+        ],
+        "name": "Spell Absorption"
+    }, {
+        "ingredients": [
+            "Daedra Skin",
+            "Golden Sedge Flowers",
+            "Scales",
+            "Scrib Jerky"
+        ],
+        "name": "Swift Swim"
+    }, {
+        "ingredients": [
+            "Alit Hide",
+            "Bonemeal",
+            "Scuttle"
+        ],
+        "name": "Telekinesis"
+    }, {
+        "ingredients": [
+            "Vampire Dust"
+        ],
+        "name": "Vampirism",
+        "poison": true
+    }, {
+        "ingredients": [
+            "Hackle-Lo Leaf",
+            "Kwama Cuttle",
+            "Luminous Russula",
+            "Pearl"
+        ],
+        "name": "Water Breathing"
+    }, {
+        "ingredients": [
+            "Ampoule Pod",
+            "Kwama Cuttle",
+            "Scales",
+            "Violet Coprinus"
+        ],
+        "name": "Water Walking"
+    }, {
+        "ingredients": [
+            "Heartwood",
+            "Holly Berries"
+        ],
+        "name": "Weakness to Fire",
+        "poison": true
+    }, {
+        "ingredients": [
+            "Poison"
+        ],
+        "name": "Weakness to Poison",
+        "poison": true
+    }
+]

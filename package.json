@@ -1,19 +1,21 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "fortify-alchemy",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
+  "description": "An alchemy tool for the ES series",
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write src/**/*.{js,jsx}",
-    "start": "npm run develop",
+    "start": "yarn develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
   "dependencies": {
     "gatsby": "^2.13.36",
+    "gatsby-source-filesystem": "^2.1.6",
+    "gatsby-transformer-json": "^2.2.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   },

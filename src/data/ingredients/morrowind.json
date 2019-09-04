@@ -1,0 +1,579 @@
+[
+    {
+        "description": "Found by killing Alits",
+        "effects": ["drain-intelligence", "resist-poison", "telekinesis", "detect-animal"],
+        "image": "MW-icon-ingredient-Alit Hide.png",
+        "name": "Alit Hide",
+        "itemID": "ingred_alit_hide_01",
+        "value": 5,
+        "weight": 1
+    }, {
+        "description": "Common growing in swamps in the Bitter Coast region; one of two possible outputs of the draggle-tail plant (the other is the Coda Flower)",
+        "effects": ["water-walking", "paralyze", "detect-animal", "drain-willpower"],
+        "image": "MW-icon-ingredient-Ampoule Pod.png",
+        "name": "Ampoule Pod",
+        "itemID": "ingred_bc_ampoule_pod",
+        "value": 2,
+        "weight": 0.1
+    }, {
+        "description": "Found by killing Ash creatures",
+        "effects": ["drain-agility", "resist-magicka", "cure-blight-disease", "resist-magicka"],
+        "image": "MW-icon-ingredient-Ash Salts.png",
+        "name": "Ash Salts",
+        "itemID": "ingred_ash_salts_01",
+        "value": 25,
+        "weight": 0.1
+    }, {
+        "description": "Most common in farm areas, occasionally found in the wild",
+        "effects": ["fortify-intelligence", "fortify-strength", "resist-common-disease", "detect-key"],
+        "image": "MW-icon-ingredient-Ash_Yam.png",
+        "name": "Ash Yam",
+        "itemID": "ingred_ash_yam_01",
+        "value": 1,
+        "weight": 0.5
+    }, {
+        "description": "Grows on thorny vines in drier regions",
+        "effects": ["restore-intelligence", "invisibility", "drain-endurance", "drain-magicka"],
+        "image": "MW-icon-ingredient-Bittergreen Petal.png",
+        "name": "Bittergreen Petals",
+        "itemID": "ingred_bittergreen_petals_01",
+        "value": 5,
+        "weight": 0.1
+    }, {
+        "description": "These flowers are most common in the Ascadian Isles region",
+        "effects": ["drain-agility", "resist-fire", "drain-endurance", "light"],
+        "image": "MW-icon-ingredient-Black Anther.png",
+        "name": "Black Anther",
+        "itemID": "ingred_black_anther_01",
+        "value": 2,
+        "weight": 0.1
+    }, {
+        "description": "Somewhat rare, mostly found in caves",
+        "effects": ["drain-strength", "resist-frost", "drain-speed", "cure-poison"],
+        "image": "MW-icon-ingredient-Black Lichen.png",
+        "name": "Black Lichen",
+        "itemID": "ingred_black_lichen_01",
+        "value": 2,
+        "weight": 0.1
+    }, {
+        "description": "Grows in Bloat Spores, which are unfortunately not found anywhere in the game. The only examples you can find are in random containers, or sold by vendors",
+        "effects": ["drain-magicka", "fortify-intelligence", "fortify-willpower", "detect-animal"],
+        "image": "MW-icon-ingredient-Ash Salts.png",
+        "name": "Bloat",
+        "itemID": "ingred_bloat_01",
+        "value": 5,
+        "weight": 0.1
+    }, {
+        "description": "Found on skeletons (living or dead), and also in urns in most tombs",
+        "effects": ["restore-agility", "telekinesis", "drain-fatigue", "drain-personality"],
+        "image": "MW-icon-ingredient-Bonemeal.png",
+        "name": "Bonemeal",
+        "itemID": "ingred_bonemeal_01",
+        "value": 2,
+        "weight": 0.2
+    }, {
+        "description": "Found in most taverns and many houses",
+        "effects": ["restore-fatigue"],
+        "image": "MW-icon-ingredient-Bread.png",
+        "name": "Bread",
+        "itemID": "ingred_bread_01",
+        "value": 1,
+        "weight": 0.2
+    }, {
+        "description": "This shelf-fungus grows on tree trunks in the Bitter Coast region",
+        "effects": ["drain-speed", "drain-endurance", "dispel", "drain-strength"],
+        "image": "MW-icon-ingredient-Bungler's_Bane.png",
+        "name": "Bungler's Bane",
+        "itemID": "ingred_bc_bungler",
+        "value": 1,
+        "weight": 0.5
+    }, {
+        "description": "Found growing in drier regions",
+        "effects": ["drain-luck", "restore-fatigue", "cure-common-disease", "drain-willpower"],
+        "image": "MW-icon-ingredient-Chokeweed.png",
+        "name": "Chokeweed",
+        "itemID": "ingred_chokeweed_01",
+        "value": 1,
+        "weight": 0.1
+    }, {
+        "description": "Found growing in swampy pools in the Bitter Coast region on the draggle-tail plant",
+        "effects": ["drain-personality", "levitate", "drain-intelligence", "drain-health"],
+        "image": "MW-icon-ingredient-Coda Flower.png",
+        "name": "Coda Flower",
+        "itemID": "ingred_bc_coda_flower",
+        "value": 23,
+        "weight": 0.1
+    }, {
+        "description": "Grows in shrubs in the West Gash and Ascadian Isles regions",
+        "effects": ["drain-fatigue", "restore-magicka", "fire-shield", "reflect"],
+        "image": "MW-icon-ingredient-Comberry.png",
+        "name": "Comberry",
+        "itemID": "ingred_comberry_01",
+        "value": 2,
+        "weight": 0.1
+    }, {
+        "description": "Mostly found in drier regions in the wild",
+        "effects": ["cure-paralyzation", "restore-health", "lightning-shield", "fortify-luck"],
+        "image": "MW-icon-ingredient-Corkbulb Root.png",
+        "name": "Corkbulb Root",
+        "itemID": "ingred_corkbulb_root_01",
+        "value": 5,
+        "weight": 0.1
+    }, {
+        "description": "Found by killing Corprus Stalkers",
+        "effects": ["drain-fatigue", "fortify-luck", "drain-willpower", "restore-health"],
+        "image": "MW-icon-ingredient-Corprus Weepings.png",
+        "name": "Corprus Weepings",
+        "itemID": "ingred_corprus_weepings_01",
+        "value": 50,
+        "weight": 0.1
+    }, {
+        "description": "Found by killing Mudcrabs",
+        "effects": ["restore-fatigue", "resist-shock", "lightning-shield", "restore-luck"],
+        "image": "MW-icon-ingredient-Crab Meat.png",
+        "name": "Crab Meat",
+        "itemID": "ingred_crab_meat_01",
+        "value": 1,
+        "weight": 0.5
+    }, {
+        "description": "Somewhat rare, mostly found at vendors",
+        "effects": ["fortify-strength", "cure-common-disease", "paralyze", "swift-swim"],
+        "image": "MW-icon-ingredient-Daedra Skin.png",
+        "name": "Daedra Skin",
+        "itemID": "ingred_daedra_skin_01",
+        "value": 200,
+        "weight": 0.2
+    }, {
+        "description": "Found by killing most Daedra - Dremora, Ogrim, Clannfears, Daedroth, etc",
+        "effects": ["restore-magicka", "fortify-endurance", "drain-agility", "night-eye"],
+        "image": "MW-icon-ingredient-Daedra's Heart.png",
+        "name": "Daedra's Heart",
+        "itemID": "ingred_daedras_heart_01",
+        "value": 200,
+        "weight": 1.0
+    }, {
+        "description": "Common in barrels in Dwemer ruins. Also found in a small number of caves",
+        "effects": ["drain-agility", "invisibility", "reflect", "detect-key"],
+        "image": "MW-icon-ingredient-Diamond.png",
+        "name": "Diamond",
+        "itemID": "ingred_diamond_01",
+        "value": 250,
+        "weight": 0.2
+    }, {
+        "description": "Found by killing Dreugh",
+        "effects": ["fortify-strength", "restore-strength", "drain-luck", "drain-willpower"],
+        "image": "MW-icon-ingredient-Dreugh Wax.png",
+        "name": "Dreugh Wax",
+        "itemID": "ingred_dreugh_wax_01",
+        "value": 100,
+        "weight": 0.2
+    }, {
+        "description": "Found by killing Ghosts",
+        "effects": ["fortify-agility", "detect-animal", "drain-strength", "drain-health"],
+        "image": "MW-icon-ingredient-Ectoplasm.png",
+        "name": "Ectoplasm",
+        "itemID": "ingred_ectoplasm_01",
+        "value": 10,
+        "weight": 0.1
+    }, {
+        "description": "Common in barrels in Dwemer ruins",
+        "effects": ["fortify-magicka", "restore-health", "drain-agility", "drain-endurance"],
+        "image": "MW-icon-ingredient-Emerald.png",
+        "name": "Emerald",
+        "itemID": "ingred_emerald_01",
+        "value": 150,
+        "weight": 0.2
+    }, {
+        "description": "Found growing in the Molag Amur and Red Mountain regions",
+        "effects": ["resist-fire", "drain-health", "spell-absorption", "paralyze"],
+        "image": "MW-icon-ingredient-Fire Petal.png",
+        "name": "Fire Petal",
+        "itemID": "ingred_fire_petal_01",
+        "value": 2,
+        "weight": 0.1
+    }, {
+        "description": "Found by killing Flame Atronachs",
+        "effects": ["drain-health", "fortify-agility", "resist-frost", "fire-shield"],
+        "image": "MW-icon-ingredient-fire-salts.png",
+        "name": "fire-salts",
+        "itemID": "ingred_fire_salts_01",
+        "value": 100,
+        "weight": 0.1
+    }, {
+        "description": "Found by killing Frost Atronachs",
+        "effects": ["drain-speed", "restore-magicka", "frost-shield", "resist-fire"],
+        "image": "MW-icon-ingredient-Frost Salts.png",
+        "name": "Frost Salts",
+        "itemID": "ingred_frost_salts_01",
+        "value": 75,
+        "weight": 0.1
+    }, {
+        "description": "Supposedly the heart tissue of an Ash Ghoul, but not found on them. Mostly in random ingredient containers and sold at vendors",
+        "effects": ["paralyze", "cure-poison", "fortify-attack"],
+        "image": "MW-icon-ingredient-Ghoul Heart.png",
+        "name": "Ghoul Heart",
+        "itemID": "ingred_ghoul_heart_01",
+        "value": 150,
+        "weight": 0.5
+    }, {
+        "description": "Found growing in bushes in the grassy regions",
+        "effects": ["drain-health", "burden", "drain-luck", "restore-strength"],
+        "image": "MW-icon-ingredient-Gold Kanet.png",
+        "name": "Gold Kanet",
+        "itemID": "ingred_gold_kanet_01",
+        "value": 5,
+        "weight": 0.1
+    }, {
+        "description": "No reliable location. Occasionally for sale at vendors or found in random containers",
+        "effects": ["drain-intelligence", "cure-common-disease", "drain-magicka", "restore-endurance"],
+        "image": "MW-icon-ingredient-Gravedust.png",
+        "name": "Gravedust",
+        "itemID": "ingred_gravedust_01",
+        "value": 1,
+        "weight": 0.1
+    }, {
+        "description": "Mostly grows on rocks in caves",
+        "effects": ["fortify-personality", "cure-common-disease", "drain-strength", "drain-health"],
+        "image": "MW-icon-ingredient-Green Lichen.png",
+        "name": "Green Lichen",
+        "itemID": "ingred_green_lichen_01",
+        "value": 1,
+        "weight": 0.1
+    }, {
+        "description": "Found by killing Guars",
+        "effects": ["drain-fatigue", "fortify-endurance", "restore-personality", "fortify-luck"],
+        "image": "MW-icon-ingredient-Guar Hide.png",
+        "name": "Guar Hide",
+        "itemID": "ingred_guar_hide_01",
+        "value": 5,
+        "weight": 1.0
+    }, {
+        "description": "Found as food in most houses; grows wild in the Azura's Coast region",
+        "effects": ["restore-fatigue", "paralyze", "water-breathing", "restore-luck"],
+        "image": "MW-icon-ingredient-Hackle-Lo Leaf.png",
+        "name": "Hackle-Lo Leaf",
+        "itemID": "ingred_hackle-lo_leaf_01",
+        "value": 30,
+        "weight": 0.1
+    }, {
+        "description": "This common flower grows throughout the greener regions of Vvardenfell",
+        "effects": ["restore-personality", "feather", "drain-speed", "drain-personality"],
+        "image": "MW-icon-ingredient-Heather.png",
+        "name": "Heather",
+        "itemID": "ingred_heather_01",
+        "value": 1,
+        "weight": 0.1
+    }, {
+        "description": "Found by killing Nix-Hounds",
+        "effects": ["restore-fatigue", "fortify-fatigue", "reflect", "detect-enchantment"],
+        "image": "MW-icon-ingredient-Hound Meat.png",
+        "name": "Hound Meat",
+        "itemID": "ingred_hound_meat_01",
+        "value": 2,
+        "weight": 1.0
+    }, {
+        "description": "This shelf-fungus is found growing on tree trunks in the Bitter Coast region",
+        "effects": ["drain-luck", "drain-agility", "drain-fatigue", "detect-enchantment"],
+        "image": "MW-icon-ingredient-Hypha Facia.png",
+        "name": "Hypha Facia",
+        "itemID": "ingred_bc_hypha_facia",
+        "value": 1,
+        "weight": 0.1
+    }, {
+        "description": "Found by killing Kagoutis",
+        "effects": ["drain-fatigue", "fortify-speed", "resist-common-disease", "night-eye"],
+        "image": "MW-icon-ingredient-Kagouti Hide.png",
+        "name": "Kagouti Hide",
+        "itemID": "ingred_kagouti_hide_01",
+        "value": 2,
+        "weight": 1.0
+    }, {
+        "description": "Kreshweed is found growing near sea water, most common in the Azura's Coast, Bitter Coast and West Gash regions",
+        "effects": ["restore-luck", "fortify-personality", "drain-magicka", "drain-speed"],
+        "image": "MW-icon-ingredient-Kresh Fiber.png",
+        "name": "Kresh Fiber",
+        "itemID": "ingred_kresh_fiber_01",
+        "value": 1,
+        "weight": 0.1
+    }, {
+        "description": "Found by killing Kwama (any type)",
+        "effects": ["resist-poison", "drain-fatigue", "water-walking", "water-breathing"],
+        "image": "MW-icon-ingredient-Kwama Cuttle.png",
+        "name": "Kwama Cuttle",
+        "itemID": "ingred_kwama_cuttle_01",
+        "value": 2,
+        "weight": 0.1
+    }, {
+        "description": "Found in Egg Mines. Also common as food in houses",
+        "effects": ["restore-fatigue", "paralyze", "frost-shield", "fortify-health"],
+        "image": "MW-icon-ingredient-Kwama Egg.png",
+        "name": "Large Kwama Egg",
+        "itemID": "food_kwama_egg_02",
+        "value": 2,
+        "weight": 2.0
+    }, {
+        "description": "Found in the Bitter Coast region, also common in caves",
+        "effects": ["water-breathing", "drain-fatigue", "poison"],
+        "image": "MW-icon-ingredient-Luminous Russula.png",
+        "name": "Luminous Russula",
+        "itemID": "ingred_russula_01",
+        "value": 1,
+        "weight": 0.2
+    }, {
+        "description": "Found growing near water, most common in the Azura's Coast region",
+        "effects": ["restore-health", "detect-enchantment", "drain-willpower", "drain-fatigue"],
+        "image": "MW-icon-ingredient-Marshmerrow.png",
+        "name": "Marshmerrow",
+        "itemID": "ingred_marshmerrow_01",
+        "value": 1,
+        "weight": 0.1
+    }, {
+        "description": "Found in smuggler caves. Most vendors will not deal with you if you are carrying this illegal narcotic substance",
+        "effects": ["fortify-speed", "dispel", "drain-endurance", "drain-luck"],
+        "image": "MW-icon-ingredient-Moon Sugar.png",
+        "name": "Moon Sugar",
+        "itemID": "ingred_moon_sugar_01",
+        "value": 50,
+        "weight": 0.1
+    }, {
+        "description": "Found on Muck Sponges which grow near water in many regions",
+        "effects": ["drain-intelligence", "detect-key", "drain-personality", "cure-common-disease"],
+        "image": "MW-icon-ingredient-Muck.png",
+        "name": "Muck",
+        "itemID": "ingred_muck_01",
+        "value": 1,
+        "weight": 0.1
+    }, {
+        "description": "Found by killing Netch",
+        "effects": ["fortify-endurance", "fortify-intelligence", "drain-personality", "cure-paralyzation"],
+        "image": "MW-icon-ingredient-Netch Leather.png",
+        "name": "Netch Leather",
+        "itemID": "ingred_netch_leather_01",
+        "value": 1,
+        "weight": 1.0
+    }, {
+        "description": "Found in kollops on the sea floor. Also found in barrels in Dwemer ruins",
+        "effects": ["drain-agility", "dispel", "water-breathing", "resist-common-disease"],
+        "image": "MW-icon-ingredient-Pearl.png",
+        "name": "Pearl",
+        "itemID": "ingred_pearl_01",
+        "value": 100,
+        "weight": 0.2
+    }, {
+        "description": "Found by killing Cliff Racers",
+        "effects": ["drain-willpower", "levitate"],
+        "image": "MW-icon-ingredient-Racer Plumes.png",
+        "name": "Racer Plumes",
+        "itemID": "ingred_racer_plumes_01",
+        "value": 20,
+        "weight": 0.1
+    }, {
+        "description": "Found by killing Rats",
+        "effects": ["drain-magicka", "paralyze", "cure-poison", "resist-poison"],
+        "image": "MW-icon-ingredient-Rat Meat.png",
+        "name": "Rat Meat",
+        "itemID": "ingred_rat_meat_01",
+        "value": 1,
+        "weight": 1.0
+    }, {
+        "description": "Found in Ebony Mines. Usually a crime to take it",
+        "effects": ["drain-agility", "cure-poison", "frost-shield", "restore-speed"],
+        "image": "MW-icon-ingredient-Raw Ebony.png",
+        "name": "Raw Ebony",
+        "itemID": "ingred_raw_ebony_01",
+        "value": 200,
+        "weight": 10.0
+    }, {
+        "description": "Found in Glass Mines. Usually a crime to take it",
+        "effects": ["drain-intelligence", "drain-strength", "drain-speed", "fire-shield"],
+        "image": "MW-icon-ingredient-Raw Glass.png",
+        "name": "Raw Glass",
+        "itemID": "ingred_raw_glass_01",
+        "value": 200,
+        "weight": 2.0
+    }, {
+        "description": "Found growing on rocks, mostly in the Ashlands. Also for sale at vendors",
+        "effects": ["drain-speed", "light", "cure-common-disease", "drain-magicka"],
+        "image": "MW-icon-ingredient-Red Lichen.png",
+        "name": "Red Lichen",
+        "itemID": "ingred_red_lichen_01",
+        "value": 25,
+        "weight": 0.1
+    }, {
+        "description": "No reliable location. Occasionally for sale at vendors or found in random containers",
+        "effects": ["restore-health", "restore-speed", "burden", "resist-common-disease"],
+        "image": "MW-icon-ingredient-Resin.png",
+        "name": "Resin",
+        "itemID": "ingred_resin_01",
+        "value": 10,
+        "weight": 0.1
+    }, {
+        "description": "Found growing in hilly regions",
+        "effects": ["drain-willpower", "fortify-agility", "drain-health", "cure-poison"],
+        "image": "MW-icon-ingredient-Roobrush.png",
+        "name": "Roobrush",
+        "itemID": "ingred_roobrush_01",
+        "value": 1,
+        "weight": 0.1
+    }, {
+        "description": "Often found in barrels in Dwemer ruins",
+        "effects": ["drain-health", "feather", "restore-intelligence", "drain-agility"],
+        "image": "MW-icon-ingredient-Ruby.png",
+        "name": "Ruby",
+        "itemID": "ingred_ruby_01",
+        "value": 200,
+        "weight": 0.2
+    }, {
+        "description": "Found growing near sea water, most common in the Azura's Coast region. Also a common food item in houses",
+        "effects": ["restore-fatigue", "fortify-magicka", "drain-strength", "restore-health"],
+        "image": "MW-icon-ingredient-Saltrice.png",
+        "name": "Saltrice",
+        "itemID": "ingred_saltrice_01",
+        "value": 1,
+        "weight": 0.1
+    }, {
+        "description": "Found by killing Slaughterfish",
+        "effects": ["drain-personality", "water-walking", "restore-endurance", "swift-swim"],
+        "image": "MW-icon-ingredient-Scales.png",
+        "name": "Scales",
+        "itemID": "ingred_scales_01",
+        "value": 2,
+        "weight": 0.2
+    }, {
+        "description": "Found by killing Scamps",
+        "effects": ["drain-magicka", "cure-paralyzation", "restore-personality", "restore-strength"],
+        "image": "MW-icon-ingredient-Scamp Skin.png",
+        "name": "Scamp Skin",
+        "itemID": "ingred_scamp_skin_01",
+        "value": 10,
+        "weight": 0.1
+    }, {
+        "description": "Grows in dry, hilly regions",
+        "effects": ["drain-strength", "cure-poison", "drain-health", "restore-willpower"],
+        "image": "MW-icon-ingredient-Scathecraw.png",
+        "name": "Scathecraw",
+        "itemID": "ingred_scathecraw_01",
+        "value": 2,
+        "weight": 0.1
+    }, {
+        "description": "Found by killing Dwemer constructs. Also common in barrels and on shelves in Dwemer ruins",
+        "effects": ["drain-health", "lightning-shield", "resist-shock", "restore-intelligence"],
+        "image": "MW-icon-ingredient-Scrap Metal.png",
+        "name": "Scrap Metal",
+        "itemID": "ingred_scrap_metal_01",
+        "value": 20,
+        "weight": 10.0
+    }, {
+        "description": "Found by killing Scribs",
+        "effects": ["fortify-willpower", "cure-poison", "cure-blight-disease", "restore-willpower"],
+        "image": "MW-icon-ingredient-Scrib Jelly.png",
+        "name": "Scrib Jelly",
+        "itemID": "ingred_scrib_jelly_01",
+        "value": 10,
+        "weight": 0.1
+    }, {
+        "description": "Found as a food item in houses",
+        "effects": ["restore-fatigue", "fortify-fatigue", "burden", "swift-swim"],
+        "image": "MW-icon-ingredient-Scrib Jerky.png",
+        "name": "Scrib Jerky",
+        "itemID": "ingred_scrib_jerky_01",
+        "value": 5,
+        "weight": 0.2
+    }, {
+        "description": "Found as a food item in houses",
+        "effects": ["restore-fatigue", "fortify-fatigue", "feather", "telekinesis"],
+        "image": "MW-icon-ingredient-Scuttle.png",
+        "name": "Scuttle",
+        "itemID": "ingred_scuttle_01",
+        "value": 10,
+        "weight": 0.1
+    }, {
+        "description": "Found by killing Shalks",
+        "effects": ["drain-fatigue", "fortify-health", "drain-personality", "fortify-speed"],
+        "image": "MW-icon-ingredient-Shalk Resin.png",
+        "name": "Shalk Resin",
+        "itemID": "ingred_shalk_resin_01",
+        "value": 50,
+        "weight": 0.1
+    }, {
+        "description": "Rare. Mostly found for sale at vendors or in random containers",
+        "effects": ["drain-personality", "fortify-agility", "fire-shield", "restore-agility"],
+        "image": "MW-icon-ingredient-Sload Soap.png",
+        "name": "Sload Soap",
+        "itemID": "ingred_sload_soap_01",
+        "value": 50,
+        "weight": 0.1
+    }, {
+        "description": "Found in Egg Mines. Also common food item in houses",
+        "effects": ["restore-fatigue"],
+        "image": "MW-icon-ingredient-Kwama Egg.png",
+        "name": "Small Kwama Egg",
+        "itemID": "food_kwama_egg_01",
+        "value": 1,
+        "weight": 0.5
+    }, {
+        "description": "Found on Slough Ferns growing in the Bitter Coast region",
+        "effects": ["drain-strength", "drain-fatigue", "detect-key", "paralyze"],
+        "image": "MW-icon-ingredient-Spore Pod.png",
+        "name": "Spore Pod",
+        "itemID": "ingred_bc_spore_pod",
+        "value": 1,
+        "weight": 0.1
+    }, {
+        "description": "These flowers are common in the West Gash and Ascadian Isles regions",
+        "effects": ["restore-strength", "fortify-magicka", "drain-luck", "fortify-personality"],
+        "image": "MW-icon-ingredient-Stoneflower Petals.png",
+        "name": "Stoneflower Petals",
+        "itemID": "ingred_stoneflower_petals_01",
+        "value": 1,
+        "weight": 0.1
+    }, {
+        "description": "Found growing in dry, hilly regions",
+        "effects": ["restore-willpower", "levitate", "drain-magicka", "drain-speed"],
+        "image": "MW-icon-ingredient-Trama Root.png",
+        "name": "Trama Root",
+        "itemID": "ingred_trama_root_01",
+        "value": 10,
+        "weight": 0.1
+    }, {
+        "description": "Found by killing Vampires",
+        "effects": ["fortify-health", "fortify-strength", "spell-absorption", "vampirism"],
+        "image": "MW-icon-ingredient-Vampire Dust.png",
+        "name": "Vampire Dust",
+        "itemID": "ingred_vampire_dust_01",
+        "value": 500,
+        "weight": 0.1
+    }, {
+        "description": "These mushrooms grow throughout the Bitter Coast region, and are also common in caves",
+        "effects": ["water-walking", "drain-fatigue", "poison"],
+        "image": "MW-icon-ingredient-Violet Coprinus.png",
+        "name": "Violet Coprinus",
+        "itemID": "ingred_coprinus_01",
+        "value": 1,
+        "weight": 0.5
+    }, {
+        "description": "Found by killing Storm Atronachs or Winged Twilights",
+        "effects": ["restore-magicka", "spell-absorption", "paralyze", "drain-endurance"],
+        "image": "MW-icon-ingredient-Void Salts.png",
+        "name": "Void Salts",
+        "itemID": "ingred_void_salts_01",
+        "value": 100,
+        "weight": 0.1
+    }, {
+        "description": "Found growing in the Grazelands region",
+        "effects": ["restore-health", "fortify-willpower", "paralyze", "damage-intelligence"],
+        "image": "MW-icon-ingredient-Wickwheat.png",
+        "name": "Wickwheat",
+        "itemID": "ingred_wickwheat_01",
+        "value": 1,
+        "weight": 0.1
+    }, {
+        "description": "Most common in the Ascadian Isles region",
+        "effects": ["drain-personality", "frost-shield", "cure-common-disease", "cure-paralyzation"],
+        "image": "MW-icon-ingredient-Willow Anther.png",
+        "name": "Willow Anther",
+        "itemID": "ingred_willow_anther_01",
+        "value": 10,
+        "weight": 0.1
+    }
+]
