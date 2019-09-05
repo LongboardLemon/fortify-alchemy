@@ -14,17 +14,19 @@ const Ingredient = ({ data }) => {
     );
 };
 
-let styles = {
-
-};
+let styles = {};
 
 export default Ingredient;
 
 export const pageQuery = graphql`
     query IngredientQuery($slug: String) {
-        ingredientsJson(fields: { slug: { eq: $slug } }) {
+        ingredientsJson(slug: { eq: $slug }) {
             description
-            effects
+            effects {
+                name
+                poison
+                slug
+            }
             name
             value
             weight

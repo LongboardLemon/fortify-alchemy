@@ -12,22 +12,24 @@ const Ingredients = ({ data }) => (
 
 export const pageQuery = graphql`
     query {
-      allIngredientsJson {
-        edges {
-          node {
-            description
-            effects
-            fields {
-              slug
+        allIngredientsJson {
+            edges {
+                node {
+                    description
+                    effects {
+                        name
+                        poison
+                        slug
+                    }
+                    id
+                    itemID
+                    name
+                    slug
+                    value
+                    weight
+                }
             }
-            id
-            itemID
-            name
-            value
-            weight
-          }
         }
-      }
     }
 `;
 

@@ -4,7 +4,7 @@ import { Link } from "gatsby";
 const IngredientTile = props => {
     return (
         <div style={styles.root}>
-            <Link to={`/ingredient/${props.fields.slug}`}>{props.name}</Link>
+            <Link to={`/ingredient/${props.slug}`}>{props.name}</Link>
             <div style={styles.attributeWrapper}>
                 {props.value && <p style={styles.attribute}>
                     Value: {props.value}
@@ -15,7 +15,7 @@ const IngredientTile = props => {
             </div>
             <div style={styles.effectWrapper}>
                 {props.effects.map((effect, i) => (
-                    <div key={i} style={styles.effect}>{effect}</div>
+                    <div key={i} style={styles.effect}>{effect.name}</div>
                 ))}
             </div>
         </div>
