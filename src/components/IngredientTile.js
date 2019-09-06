@@ -15,7 +15,7 @@ const IngredientTile = props => {
             </div>
             <div style={styles.effectWrapper}>
                 {props.effects.map((effect, i) => (
-                    <div key={i} style={styles.effect}>{effect.name}</div>
+                    <Link key={i} style={styles.effect} to={`/effect/${effect.slug}`}>{effect.name}</Link>
                 ))}
             </div>
         </div>

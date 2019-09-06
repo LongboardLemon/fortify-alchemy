@@ -34,37 +34,40 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
 
 exports.createPages = async ({ graphql, actions }) => {
     const { createPage } = actions;
+    const effectPage = path.resolve("./src/components/Effect.js");
     const ingredientPage = path.resolve("./src/components/Ingredient.js");
-    const ingredientResult = await graphql(`
+    const jsonResults = await graphql(`
         query {
+            allEffectsJson {
+                edges {
+                    node {
+                        slug
+                    }
+                }
+            }
             allIngredientsJson {
                 edges {
                     node {
-                        fields {
-                            slug
-                        }
+                        slug
                     }
                 }
             }
         }
     `);
-    const ingredients = ingredientResult.data.allIngredientsJson.edges;
+    const effects = jsonResults.data.allEffectsJson.edges;
+    const ingredients = jsonResults.data.allIngredientsJson.edges;
+    effects.forEach((effect, index) => {
+        createPage({
+            component: effectPage,
+            context: { slug: effect.node.slug },
+            path: `/effect/${effect.node.slug}`
+        })
+    });
     ingredients.forEach((ingredient, index) => {
         createPage({
             component: ingredientPage,
-            context: { slug: ingredient.node.fields.slug },
-            path: `/ingredient/${ingredient.node.fields.slug}`,
+            context: { slug: ingredient.node.slug },
+            path: `/ingredient/${ingredient.node.slug}`,
         });
     });
-};
-
-exports.onCreateNode = ({ actions, getNode, node }) => {
-    const { createNodeField } = actions;
-    if (node.internal.type == "ingredientsJson" || node.internal.type == "effectsJson") {
-        createNodeField({
-            name: "slug",
-            node,
-            value: `${node.name.replace(/\s/g, "-").toLowerCase()}`
-        });
-    }
 };
