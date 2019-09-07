@@ -7,7 +7,8 @@
             "Bristleback Leather"
         ],
         "name": "Blind",
-        "poison": true
+        "poison": true,
+        "school": "Illusion",
     }, {
         "description": "Increases the target's encumbrance by M points for D seconds.",
         "effect": "Burden M points for D seconds",
@@ -18,7 +19,8 @@
             "Scrib Jerky"
         ],
         "name": "Burden",
-        "poison": true
+        "poison": true,
+        "school": "Alteration",
     }, {
         "description": "Removes the effects of Blight Diseases from the target.",
         "effect": "Cure Blight Disease",
@@ -27,7 +29,8 @@
             "Meteor Slime",
             "Scrib Jelly"
         ],
-        "name": "Cure Blight Disease"
+        "name": "Cure Blight Disease",
+        "school": "Restoration",
     }, {
         "description": "Removes the effects of Common Diseases from the target.",
         "effect": "Cure Common Disease",
@@ -40,7 +43,8 @@
             "Red Lichen",
             "Willow Anther"
         ],
-        "name": "Cure Common Disease"
+        "name": "Cure Common Disease",
+        "school": "Restoration",
     }, {
         "description": "Cures the target of the effects of Paralyzation.",
         "effect": "Cure Paralyzation",
@@ -50,7 +54,8 @@
             "Scamp Skin",
             "Willow Anther"
         ],
-        "name": "Cure Paralyzation"
+        "name": "Cure Paralyzation",
+        "school": "Restoration",
     }, {
         "description": "Dispels any long-duration Poison effects currently affecting the target.",
         "effect": "Cure Poison",
@@ -64,7 +69,8 @@
             "Scathecraw",
             "Scrib Jelly"
         ],
-        "name": "Cure Poison"
+        "name": "Cure Poison",
+        "school": "Restoration",
     }, {
         "description": "Permanently lowers the Fatigue of the target by M points. If the target's Fatigue is reduced below 0, they will pass out and collapse to the ground.",
         "effect": "Damage Fatigue M points",
@@ -72,7 +78,8 @@
             "Poison"
         ],
         "name": "Damage Fatigue",
-        "poison": true
+        "poison": true,
+        "school": "Destruction",
     }, {
         "description": "Permanently lowers the Health of the target by M points. Note that this does not affect maximum health.",
         "effect": "Damage Health M points",
@@ -84,22 +91,29 @@
             "Scrib Cabbage"
         ],
         "name": "Damage Health",
-        "poison": true
+        "poison": true,
+        "school": "Destruction",
     }, {
+        "description": "Permanently lowers the intelligence of the target by M points for D seconds.",
         "effect": "Damage Intelligence M points for D seconds",
         "ingredients": [
             "Wickwheat"
         ],
         "name": "Damage Intelligence",
-        "poison": true
+        "poison": true,
+        "school": "Destruction",
     }, {
+        "description": "Permanently lowers the Magicka of the target by M points.",
         "effect": "Damage Magicka M points for D seconds",
         "ingredients": [
             "Durzog Meat"
         ],
         "name": "Damage Magicka",
-        "poison": true
+        "poison": true,
+        "school": "Destruction",
     }, {
+        "description": "Causes you to detect all Animals in the vicinity.",
+        "effect": "Detect Animal M feet for D seconds",
         "ingredients": [
             "Alit Hide",
             "Ampoule Pod",
@@ -107,38 +121,53 @@
             "Ectoplasm",
             "Horker Tusk"
         ],
-        "name": "Detect Animal"
+        "name": "Detect Animal",
+        "school": "Mysticism",
     }, {
+        "description": "Causes you to detect all Enchantments in the vicinity.",
+        "effect": "Detect Enchantment M feet for D seconds",
         "ingredients": [
             "Hound Meat",
             "Hypha Facia",
             "Lloramor Spines",
             "Marshmerrow"
         ],
-        "name": "Detect Enchantment"
+        "name": "Detect Enchantment",
+        "school": "Mysticism",
     }, {
+        "description": "Causes you to detect all Keys in the vicinity.",
+        "effect": "Detect Key M feet for D seconds",
         "ingredients": [
             "Ash Yam",
             "Diamond",
             "Muck",
             "Spore Pod"
         ],
-        "name": "Detect Key"
+        "name": "Detect Key",
+        "school": "Mysticism",
     }, {
+        "description": "Cancels all temporary magic effects.",
+        "effect": "Dispel",
         "ingredients": [
             "Bungler's Bane",
             "Pearl",
             "Moon Sugar",
             "Timsa-Come-By flowers"
         ],
-        "name": "Dispel"
+        "name": "Dispel",
+        "school": "Mysticism",
     }, {
+        "description": "Temporarily lowers the target's Alteration attribute.",
+        "effect": "Drain Alteration",
         "ingredients": [
             "Horker Tusk"
         ],
         "name": "Drain Alteration",
-        "poison": true
+        "poison": true,
+        "school": "Destruction",
     }, {
+        "description": "Temporarily lowers the target's Agility attribute.",
+        "effect": "Drain Agility",
         "ingredients": [
             "Ash Salts",
             "Black Anther",
@@ -151,8 +180,11 @@
             "Ruby"
         ],
         "name": "Drain Agility",
-        "poison": true
+        "poison": true,
+        "school": "Destruction",
     }, {
+        "description": "Temporarily lowers the target's Endurance attribute.",
+        "effect": "Drain Endurance",
         "ingredients": [
             "Bittergreen Petals",
             "Black Anther",
@@ -163,8 +195,11 @@
             "Wolfsbane Petals"
         ],
         "name": "Drain Endurance",
-        "poison": true
+        "poison": true,
+        "school": "Destruction",
     }, {
+        "description": "Temporarily lowers the target's Fatigue attribute.",
+        "effect": "Drain Fatigue",
         "ingredients": [
             "Bear Pelt",
             "Bonemeal",
@@ -191,8 +226,11 @@
             "Wrapped Corprusmeat Hunk"
         ],
         "name": "Drain Fatigue",
-        "poison": true
+        "poison": true,
+        "school": "Destruction",
     }, {
+        "description": "Temporarily lowers the target's Health attribute.",
+        "effect": "Drain Health",
         "ingredients": [
             "Coda Flower",
             "Ectoplasm",
@@ -215,8 +253,11 @@
             "Wrapped Corprusmeat Hunk"
         ],
         "name": "Drain Health",
-        "poison": true
+        "poison": true,
+        "school": "Destruction",
     }, {
+        "description": "Temporarily lowers the target's Intelligence attribute.",
+        "effect": "Drain Intelligence",
         "ingredients": [
             "Alit Hide",
             "Coda Flower",
@@ -227,8 +268,11 @@
             "Scrib Cabbage"
         ],
         "name": "Drain Intelligence",
-        "poison": true
+        "poison": true,
+        "school": "Destruction",
     }, {
+        "description": "Temporarily lowers the target's Luck attribute.",
+        "effect": "Drain Luck",
         "ingredients": [
             "Chokeweed",
             "Dreugh Wax",
@@ -239,8 +283,11 @@
             "Stoneflower Petals"
         ],
         "name": "Drain Luck",
-        "poison": true
+        "poison": true,
+        "school": "Destruction",
     }, {
+        "description": "Temporarily lowers the target's Magicka attribute.",
+        "effect": "Drain Magicka",
         "ingredients": [
             "Belladonna Berries",
             "Bittergreen Petals",
@@ -264,8 +311,11 @@
             "Wrapped Corprusmeat Hunk"
         ],
         "name": "Drain Magicka",
-        "poison": true
+        "poison": true,
+        "school": "Destruction",
     }, {
+        "description": "Temporarily lowers the target's Personality attribute.",
+        "effect": "Drain Personality",
         "ingredients": [
             "Bonemeal",
             "Coda Flower",
@@ -279,8 +329,11 @@
             "Willow Anther"
         ],
         "name": "Drain Personality",
-        "poison": true
+        "poison": true,
+        "school": "Destruction",
     }, {
+        "description": "Temporarily lowers the target's Speed attribute.",
+        "effect": "Drain Speed",
         "ingredients": [
             "Black Lichen",
             "Bungler's Bane",
@@ -294,8 +347,11 @@
             "Trama Root"
         ],
         "name": "Drain Speed",
-        "poison": true
+        "poison": true,
+        "school": "Destruction",
     }, {
+        "description": "Temporarily lowers the target's Strength attribute.",
+        "effect": "Drain Strength",
         "ingredients": [
             "Black Lichen",
             "Bungler's Bane",
@@ -308,8 +364,11 @@
             "Spore Pod"
         ],
         "name": "Drain Strength",
-        "poison": true
+        "poison": true,
+        "school": "Destruction",
     }, {
+        "description": "Temporarily lowers the target's Willpower attribute.",
+        "effect": "Drain Willpower",
         "ingredients": [
             "Ampoule Pod",
             "Chokeweed",
@@ -320,23 +379,32 @@
             "Roobrush"
         ],
         "name": "Drain Willpower",
-        "poison": true
+        "poison": true,
+        "school": "Destruction",
     }, {
+        "description": "Reduces the target's encumbrance by M points.",
+        "effect": "Feather M points for D seconds",
         "ingredients": [
             "Heather",
             "Ruby",
             "Scuttle"
         ],
-        "name": "Feather"
+        "name": "Feather",
+        "school": "Alteration",
     }, {
+        "description": "Provides M% Resist Fire and damages enemies next to the target by 1 point of Fire damage per 10 points spell strength each time they successfully hit the target with a melee attack.",
+        "effect": "Fire Shield M points for D seconds",
         "ingredients": [
             "Comberry",
             "Fire Salts",
             "Raw Glass",
             "Sload Soap"
         ],
-        "name": "Fire Shield"
+        "name": "Fire Shield",
+        "school": "Alteration",
     }, {
+        "description": "Temporarily raises the target's Agility attribute by M points for D seconds.",
+        "effect": "Fortify Agility M points for D seconds",
         "ingredients": [
             "Durzog Meat",
             "Ectoplasm",
@@ -347,72 +415,102 @@
             "Scrib Cabbage",
             "Sload Soap"
         ],
-        "name": "Fortify Agility"
+        "name": "Fortify Agility",
+        "school": "Restoration",
     }, {
+        "description": "Temporarily raises the target's Attack attribute by M points for D seconds.",
+        "effect": "Fortify Attack M points for D seconds",
         "ingredients": [
             "Ghoul Heart",
             "Golden Sedge Flowers"
         ],
-        "name": "Fortify Attack"
+        "name": "Fortify Attack",
+        "school": "Restoration",
     }, {
+        "description": "Temporarily raises the target's Endurance attribute by M points for D seconds.",
+        "effect": "Fortify Endurance M points for D seconds",
         "ingredients": [
             "Daedra's Heart",
             "Guar Hide",
             "Netch Leather"
         ],
-        "name": "Fortify Endurance"
+        "name": "Fortify Endurance",
+        "school": "Restoration",
     }, {
+        "description": "Temporarily raises the target's Fatigue attribute by M points for D seconds.",
+        "effect": "Fortify Fatigue M points for D seconds",
         "ingredients": [
             "Gravetar",
             "Hound Meat",
             "Scrib Jerky",
             "Scuttle"
         ],
-        "name": "Fortify Fatigue"
+        "name": "Fortify Fatigue",
+        "school": "Restoration",
     }, {
+        "description": "Temporarily raises the target's Health attribute by M points for D seconds.",
+        "effect": "Fortify Health M points for D seconds",
         "ingredients": [
             "Human Flesh",
             "Large Kwama Egg",
             "Shalk Resin",
             "Vampire Dust"
         ],
-        "name": "Fortify Health"
+        "name": "Fortify Health",
+        "school": "Restoration",
     }, {
+        "description": "Temporarily raises the target's Intelligence attribute by M points for D seconds.",
+        "effect": "Fortify Intelligence M points for D seconds",
         "ingredients": [
             "Ash Yam",
             "Bloat",
             "Horker Tusk",
             "Netch Leather"
         ],
-        "name": "Fortify Intelligence"
+        "name": "Fortify Intelligence",
+        "school": "Restoration",
     }, {
+        "description": "Temporarily raises the target's Luck attribute by M points for D seconds.",
+        "effect": "Fortify Luck M points for D seconds",
         "ingredients": [
             "Corkbulb Root",
             "Corprus Weepings",
             "Guar Hide"
         ],
-        "name": "Fortify Luck"
+        "name": "Fortify Luck",
+        "school": "Restoration",
     }, {
+        "description": "Temporarily raises the target's Magicka attribute by M points for D seconds.",
+        "effect": "Fortify Magicka M points for D seconds",
         "ingredients": [
             "Belladonna Berries",
             "Emerald",
             "Saltrice",
             "Stoneflower Petals"
         ],
-        "name": "Fortify Magicka"
+        "name": "Fortify Magicka",
+        "school": "Restoration",
     }, {
+        "description": "Increases the Intelligence multiplier used to determine the target's maximum Magicka.",
+        "effect": "Fortify Maximum Magicka M/10 x INT",
         "ingredients": [
             "Horker Tusk"
         ],
-        "name": "Fortify Maximum Magicka"
+        "name": "Fortify Maximum Magicka",
+        "school": "",
     }, {
+        "description": "Temporarily raises the target's Personality attribute by M points for D seconds.",
+        "effect": "Fortify Personality M points for D seconds",
         "ingredients": [
             "Green Lichen",
             "Kresh Fiber",
             "Stoneflower Petals"
         ],
-        "name": "Fortify Personality"
+        "name": "Fortify Personality",
+        "school": "Restoration",
     }, {
+        "description": "Temporarily raises the target's Speed attribute by M points for D seconds.",
+        "effect": "Fortify Speed M points for D seconds",
         "ingredients": [
             "Kagouti Hide",
             "Meadow Rye",
@@ -423,8 +521,11 @@
             "Snow Wolf Pelt",
             "Wolf Pelt"
         ],
-        "name": "Fortify Speed"
+        "name": "Fortify Speed",
+        "school": "Restoration",
     }, {
+        "description": "Temporarily raises the target's Strength attribute by M points for D seconds.",
+        "effect": "Fortify Strength M points for D seconds",
         "ingredients": [
             "Ash Yam",
             "Bear Pelt",
@@ -435,24 +536,33 @@
             "Grahl Eyeball",
             "Vampire Dust"
         ],
-        "name": "Fortify Strength"
+        "name": "Fortify Strength",
+        "school": "Restoration",
     }, {
+        "description": "Temporarily raises the target's Willpower attribute by M points for D seconds.",
+        "effect": "Fortify Willpower M points for D seconds",
         "ingredients": [
             "Bloat",
             "Meteor Slime",
             "Scrib Jelly",
             "Wickwheat"
         ],
-        "name": "Fortify Willpower"
+        "name": "Fortify Willpower",
+        "school": "Restoration",
     }, {
+        "description": "Causes M points of Frost damage for D seconds.",
+        "effect": "Frost Damage M points for D seconds",
         "ingredients": [
             "Bristleback Leather",
             "Holly Berries",
             "Raw Stalhrim"
         ],
         "name": "Frost Damage",
-        "poison": true
+        "poison": true,
+        "school": "Destruction",
     }, {
+        "description": "Provides M% Resist Frost and damages enemies next to the target by 1 point of Frost damage per 10 points spell strength each time they successfully hit the target with a melee attack.",
+        "effect": "Frost Shield M points for D seconds",
         "ingredients": [
             "Frost Salts",
             "Holly Berries",
@@ -460,37 +570,52 @@
             "Raw Ebony",
             "Willow Anther"
         ],
-        "name": "Frost Shield"
+        "name": "Frost Shield",
+        "school": "Alteration",
     }, {
+        "description": "Causes the target to become completely invisible and undetectable for the duration of the spell.",
+        "effect": "Invisibility for D seconds",
         "ingredients": [
             "Bittergreen Petals",
             "Diamond",
             "Lloramor Spines",
             "Wolfsbane Petals"
         ],
-        "name": "Invisibility"
+        "name": "Invisibility",
+        "school": "Illusion",
     }, {
+        "description": "Causes the target to be able to walk on air. Speed is determined by the value M and the character's Speed attribute.",
+        "effect": "Levitate M points for D seconds",
         "ingredients": [
             "Coda Flower",
             "Racer Plumes",
             "Sweetpulp",
             "Trama Root"
         ],
-        "name": "Levitate"
+        "name": "Levitate",
+        "school": "Alteration",
     }, {
+        "description": "Creates a glowing light of M magnitude around the target. Also effects any valid target within A feet.",
+        "effect": "Light M points for D seconds in A feet",
         "ingredients": [
             "Black Anther",
             "Red Lichen"
         ],
-        "name": "Light"
+        "name": "Light",
+        "school": "Illusion",
     }, {
+        "description": "Provides M% Resist Shock and damages enemies next to the target by 1 point of Shock damage per 10 points spell strength each time they successfully hit the target with a melee attack.",
+        "effect": "Lightning M points for D seconds Shield",
         "ingredients": [
             "Corkbulb Root",
             "Crab Meat",
             "Scrap Metal"
         ],
-        "name": "Lightning Shield"
+        "name": "Lightning Shield",
+        "school": "Alteration",
     }, {
+        "description": "Causes the target to be able to see in the dark.",
+        "effect": "Night Eye M points for D seconds",
         "ingredients": [
             "Bear Pelt",
             "Grahl Eyeball",
@@ -500,8 +625,11 @@
             "Snow Wolf Pelt",
             "Wolf Pelt"
         ],
-        "name": "Night Eye"
+        "name": "Night Eye",
+        "school": "Illusion",
     }, {
+        "description": "Causes the target to become completely immobile for the duration of the spell.",
+        "effect": "Paralyze for D seconds",
         "ingredients": [
             "Ampoule Pod",
             "Daedra Skin",
@@ -517,8 +645,11 @@
             "Wickwheat"
         ],
         "name": "Paralyze",
-        "poison": true
+        "poison": true,
+        "school": "Illusion",
     }, {
+        "description": "Damages the target with M points Poison damage for D seconds.",
+        "effect": "Poison M points for D seconds",
         "ingredients": [
             "Adamantium Ore",
             "Lloramor Spines",
@@ -528,21 +659,30 @@
             "Violet Coprinus"
         ],
         "name": "Poison",
-        "poison": true
+        "poison": true,
+        "school": "Destruction",
     }, {
+        "description": "Instantly transports the target to the location placed by the Mark spell.",
+        "effect": "Recall",
         "ingredients": [
             "Bristleback Leather"
         ],
-        "name": "Recall"
+        "name": "Recall",
+        "school": "Mysticism",
     }, {
+        "description": "Gives a M% chance that spells directed at the target will be reflected back to their caster.",
+        "effect": "Reflect M% for D seconds",
         "ingredients": [
             "Adamantium Ore",
             "Comberry",
             "Diamond",
             "Hound Meat"
         ],
-        "name": "Reflect"
+        "name": "Reflect",
+        "school": "Mysticism",
     }, {
+        "description": "Descreases the M% of damage dealt by Resist Disease. At 100%, the target is immune.",
+        "effect": "Resist Common Disease M% for D seconds",
         "ingredients": [
             "Ash Yam",
             "Bear Pelt",
@@ -553,15 +693,21 @@
             "Snow Wolf Pelt",
             "Wolf Pelt"
         ],
-        "name": "Resist Common Disease"
+        "name": "Resist Common Disease",
+        "school": "Restoration",
     }, {
+        "description": "Descreases M% of the damage dealt by Fire. At 100%, the target is immune.",
+        "effect": "Resist Fire M% for D seconds",
         "ingredients": [
             "Black Anther",
             "Fire Petal",
             "Frost Salts"
         ],
-        "name": "Resist Fire"
+        "name": "Resist Fire",
+        "school": "Restoration",
     }, {
+        "description": "Descreases M% of the damage dealt by Frost. At 100%, the target is immune.",
+        "effect": "Resist Frost M% for D seconds",
         "ingredients": [
             "Black Lichen",
             "Bristleback Leather",
@@ -571,50 +717,71 @@
             "Holly Berries",
             "Raw Stalhrim"
         ],
-        "name": "Resist Frost"
+        "name": "Resist Frost",
+        "school": "Restoration",
     }, {
+        "description": "Descreases M% of the damage dealt by Magicka. At 100%, the target is immune.",
+        "effect": "Resist Magicka M% for D seconds",
         "ingredients": [
             "Ash Salts",
             "Belladonna Berries"
         ],
-        "name": "Resist Magicka"
+        "name": "Resist Magicka",
+        "school": "Restoration",
     }, {
+        "description": "Descreases M% of the damage dealt by Paralysis. At 100%, the target is immune.",
+        "effect": "Resist Paralysis M% for D seconds",
         "ingredients": [
             "Horn Lily Bulb",
             "Timsa-Come-By flowers",
             "Sweetpulp"
         ],
-        "name": "Resist Paralysis"
+        "name": "Resist Paralysis",
+        "school": "Restoration",
     }, {
+        "description": "Descreases M% of the damage dealt by Poison. At 100%, the target is immune.",
+        "effect": "Resist Poison M% for D seconds",
         "ingredients": [
             "Alit Hide",
             "Kwama Cuttle",
             "Rat Meat"
         ],
-        "name": "Resist Poison"
+        "name": "Resist Poison",
+        "school": "Restoration",
     }, {
+        "description": "Descreases M% of the damage dealt by Shock. At 100%, the target is immune.",
+        "effect": "Resist Shock M% for D seconds",
         "ingredients": [
             "Crab Meat",
             "Scrap Metal"
         ],
-        "name": "Resist Shock"
+        "name": "Resist Shock",
+        "school": "Restoration",
     }, {
+        "description": "Returns the target's Agility attribute to its normal value.",
+        "effect": "Restore Agility M points for D seconds",
         "ingredients": [
             "Bonemeal",
             "Noble Sedge Flowers",
             "Scrib Cabbage",
             "Sload Soap"
         ],
-        "name": "Restore Agility"
+        "name": "Restore Agility",
+        "school": "Restoration",
     }, {
+        "description": "Returns the target's Endurance attribute to its normal value.",
+        "effect": "Restore Endurance M points for D seconds",
         "ingredients": [
             "Gravedust",
             "Horn Lily Bulb",
             "Timsa-Come-By flowers",
             "Scales"
         ],
-        "name": "Restore Endurance"
+        "name": "Restore Endurance",
+        "school": "Restoration",
     }, {
+        "description": "Returns the target's Fatigue attribute to its normal value.",
+        "effect": "Restore Fatigue M points for D seconds",
         "ingredients": [
             "Bread",
             "Chokeweed",
@@ -627,8 +794,11 @@
             "Scuttle",
             "Small Kwama Egg"
         ],
-        "name": "Restore Fatigue"
+        "name": "Restore Fatigue",
+        "school": "Restoration",
     }, {
+        "description": "Returns the target's Health attribute to its normal value.",
+        "effect": "Restore Health M points for D seconds",
         "ingredients": [
             "Corkbulb Root",
             "Corprus Weepings",
@@ -640,23 +810,32 @@
             "Sweetpulp",
             "Wickwheat"
         ],
-        "name": "Restore Health"
+        "name": "Restore Health",
+        "school": "Restoration",
     }, {
+        "description": "Returns the target's Intelligence attribute to its normal value.",
+        "effect": "Restore Intelligence M points for D seconds",
         "ingredients": [
             "Bittergreen Petals",
             "Ruby",
             "Scrap Metal",
             "Wolfsbane Petals"
         ],
-        "name": "Restore Intelligence"
+        "name": "Restore Intelligence",
+        "school": "Restoration",
     }, {
+        "description": "Returns the target's Luck attribute to its normal value.",
+        "effect": "Restore Luck M points for D seconds",
         "ingredients": [
             "Crab Meat",
             "Hackle-Lo Leaf",
             "Kresh Fiber"
         ],
-        "name": "Restore Luck"
+        "name": "Restore Luck",
+        "school": "Restoration",
     }, {
+        "description": "Returns the target's Magicka M points per second for the duration of its effect.",
+        "effect": "Restore Magicka M points for D seconds",
         "ingredients": [
             "Adamantium Ore",
             "Belladonna Berries",
@@ -666,23 +845,32 @@
             "Heartwood",
             "Void Salts"
         ],
-        "name": "Restore Magicka"
+        "name": "Restore Magicka",
+        "school": "Restoration",
     }, {
+        "description": "Returns the target's Personality attribute to its normal value.",
+        "effect": "Restore Personality M points for D seconds",
         "ingredients": [
             "Guar Hide",
             "Heather",
             "Scamp Skin"
         ],
-        "name": "Restore Personality"
+        "name": "Restore Personality",
+        "school": "Restoration",
     }, {
+        "description": "Returns the target's Speed attribute to its normal value.",
+        "effect": "Restore Speed M points for D seconds",
         "ingredients": [
             "Meadow Rye",
             "Nirthfly Stalks",
             "Raw Ebony",
             "Resin"
         ],
-        "name": "Restore Speed"
+        "name": "Restore Speed",
+        "school": "Restoration",
     }, {
+        "description": "Returns the target's Strength attribute to its normal value.",
+        "effect": "Restore Strength M points for D seconds",
         "ingredients": [
             "Dreugh Wax",
             "Gold Kanet",
@@ -690,72 +878,100 @@
             "Scamp Skin",
             "Stoneflower Petals"
         ],
-        "name": "Restore Strength"
+        "name": "Restore Strength",
+        "school": "Restoration",
     }, {
+        "description": "Returns the target's Willpower attribute to its normal value.",
+        "effect": "Restore Willpower M points for D seconds",
         "ingredients": [
             "Meteor Slime",
             "Scathecraw",
             "Scrib Jelly",
             "Trama Root"
         ],
-        "name": "Restore Willpower"
+        "name": "Restore Willpower",
+        "school": "ResRestoration",
     }, {
+        "description": "Gives a M% chance that incoming spells will be absorbed, and their casting cost will be used to restore the target's Magicka pool instead of taking effect.",
+        "effect": "Spell Absorption M points for D seconds",
         "ingredients": [
             "Fire Petal",
             "Lloramor Spines",
             "Vampire Dust",
             "Void Salts"
         ],
-        "name": "Spell Absorption"
+        "name": "Spell Absorption",
+        "school": "Mysticism",
     }, {
+        "description": "Allows the target to swim more quickly in the water.",
+        "effect": "Swift Swim M points for D seconds",
         "ingredients": [
             "Daedra Skin",
             "Golden Sedge Flowers",
             "Scales",
             "Scrib Jerky"
         ],
-        "name": "Swift Swim"
+        "name": "Swift Swim",
+        "school": "Alteration",
     }, {
+        "description": "Causes the target to be able to manipulate objects from a distance. The magnitude determines that maximum distance from which you can interact with objects.",
+        "effect": "Telekinesis M feet for D seconds",
         "ingredients": [
             "Alit Hide",
             "Bonemeal",
             "Scuttle"
         ],
-        "name": "Telekinesis"
+        "name": "Telekinesis",
+        "school": "Mysticism",
     }, {
+        "description": "This effect is given by becoming a vampire. The actual effects of being a vampire are represented by their respective effects like any disease. Vampirism cannot be cured.",
+        "effect": "Vampirism",
         "ingredients": [
             "Vampire Dust"
         ],
         "name": "Vampirism",
-        "poison": true
+        "poison": true,
+        "school": "Destruction",
     }, {
+        "description": "Allows the target to breathe under water.",
+        "effect": "Water Breathing for D seconds",
         "ingredients": [
             "Hackle-Lo Leaf",
             "Kwama Cuttle",
             "Luminous Russula",
             "Pearl"
         ],
-        "name": "Water Breathing"
+        "name": "Water Breathing",
+        "school": "Alteration",
     }, {
+        "description": "Allows the target to walk or run on water at normal speed, just as if it were solid ground.",
+        "effect": "Water Walking for D seconds",
         "ingredients": [
             "Ampoule Pod",
             "Kwama Cuttle",
             "Scales",
             "Violet Coprinus"
         ],
-        "name": "Water Walking"
+        "name": "Water Walking",
+        "school": "Alteration",
     }, {
+        "description": "Increases the damage dealt by Fire. M is the percentage of resistance reduction. At 100% the target will receive double damage.",
+        "effect": "Weakness to Fire M% for D seconds",
         "ingredients": [
             "Heartwood",
             "Holly Berries"
         ],
         "name": "Weakness to Fire",
-        "poison": true
+        "poison": true,
+        "school": "Destruction",
     }, {
+        "description": "Increases the damage dealt by Poison. M is the percentage of resistance reduction. At 100% the target will receive double damage.",
+        "effect": "Weakness to Poison M% for D seconds",
         "ingredients": [
             "Poison"
         ],
         "name": "Weakness to Poison",
-        "poison": true
+        "poison": true,
+        "school": "Destruction",
     }
 ]
