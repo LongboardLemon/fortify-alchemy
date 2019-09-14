@@ -14,9 +14,10 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
     const typeDefs = `
         type effectsJson implements Node {
             description: String
-            effect: String
+            effect: String!
             name: String!
             poison: Boolean
+            school: String!
             slug: String @slug
         }
         type ingredientsJson implements Node {
