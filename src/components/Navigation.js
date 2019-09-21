@@ -1,5 +1,6 @@
 import React from "react";
-import { Link } from "gatsby";
+
+import Link from "./Link";
 import SearchContainer from "./SearchInput";
 
 const Navigation = props => {
@@ -20,6 +21,8 @@ const Navigation = props => {
 
 const styles = {
     root: {
+        alignItems: "center",
+        display: "flex",
         padding: 24,
     },
 };

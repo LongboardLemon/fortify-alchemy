@@ -11,11 +11,28 @@ html::-webkit-scrollbar {
     width: 0;
 }
 body {
+    font-family: "Mirza", serif;
     margin: 0;
     overflow-x: hidden;
 }
-
+html, body, #___gatsby,
+div[role="group"][tabindex] {
+    height: 100%;
+}
 *, *::after, *::before {
     box-sizing: inherit;
     outline: none;
+}
+p {
+    margin: 0;
+}
+
+@font-face {
+    font-family: "Mirza";
+    src: url("../fonts/Mirza-Bold.ttf");
+    src: url("../fonts/Mirza-Regular.ttf");
+}
+@font-face {
+    font-family: "AlmendraSC";
+    src: url("../fonts/AlmendraSC-Regular.ttf");
 }

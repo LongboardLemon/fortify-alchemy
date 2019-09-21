@@ -4,16 +4,21 @@ import Navigation from "./Navigation";
 import "../css/index.css";
 
 const Layout = ({ children }) => (
-    <React.Fragment>
+    <div style={styles.root}>
         <Navigation />
-        <div style={styles.root}>
+        <div style={styles.body}>
             {children}
         </div>
-    </React.Fragment>
+    </div>
 );
 
 const styles = {
     root: {
+        backgroundColor: "#3C3C3C",
+        color: "#DEDEDE",
+        minHeight: "100%",
+    },
+    body: {
         display: "flex",
         paddingBottom: 16,
         paddingLeft: 16,
