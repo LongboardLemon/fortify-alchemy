@@ -1,40 +1,15 @@
 import React, { useEffect, useState } from "react";
-import { graphql, Link, useStaticQuery } from "gatsby";
+import { graphql, useStaticQuery } from "gatsby";
 import * as JsSearch from "js-search";
 
-const renderQueryResults = queryResults => {
-    let effectResults = [];
-    let ingredientResults =[];
-    for (let result of queryResults) {
-        result.node.school
-            ? effectResults.push(result)
-            : ingredientResults.push(result);
-    }
-    return (
-        <div>
-            {effectResults.length > 0 && effectResults.map((result, i) => (
-                <Link to={`/effect/${result.node.slug}`} key={`effect-${i}`}>
-                    {result.node.name}
-                </Link>
-            ))}
-            {ingredientResults.length > 0 && ingredientResults.map((result, i) => (
-                <Link to={`/ingredient/${result.node.slug}`} key={`ingredient-${i}`}>
-                    {result.node.name}
-                </Link>
-            ))}
-        </div>
-    );
-};
-
-const SearchContainer = props => {
+export const SearchContext = React.createContext();
+export const SearchStore = ({ children }) => {
     let [search, setSearch] = useState([]);
     let [searchQuery, setSearchQuery] = useState("")
     let [searchResults, setSearchResults] = useState([]);
-    useEffect(() => {
-        if (search.search) return;
-        rebuildIndex();
-    });
-    const data = useStaticQuery(graphql`
+
+    useEffect(() => rebuildIndex(), []);
+    const { allEffectsJson, allIngredientsJson } = useStaticQuery(graphql`
         query {
             allEffectsJson {
                 edges {
@@ -61,27 +36,55 @@ const SearchContainer = props => {
         dataToSearch.sanitizer = new JsSearch.LowerCaseSanitizer();
         dataToSearch.searchIndex = new JsSearch.UnorderedSearchIndex();
         dataToSearch.addIndex(["node", "name"]);
-        dataToSearch.addDocuments(data.allEffectsJson.edges);
-        dataToSearch.addDocuments(data.allIngredientsJson.edges);
+        dataToSearch.addDocuments(allEffectsJson.edges);
+        dataToSearch.addDocuments(allIngredientsJson.edges);
         setSearch(dataToSearch);
-    };
-    const handleChange = event => {
-        let queryResults = search.search(event.target.value);
-        setSearchResults(queryResults);
-        setSearchQuery(event.target.value);
     };
 
     return (
-        <div>
-            <form onSubmit={event => event.preventDefault()}>
-                <input
-                    onChange={handleChange}
-                    placeholder="Search"
-                    value={searchQuery} />
-            </form>
-            {searchResults.length > 0 && renderQueryResults(searchResults)}
-        </div>
+        <SearchContext.Provider
+            value={{
+                search,
+                searchQuery,
+                searchResults,
+                setSearchQuery,
+                setSearchResults
+            }}>
+            {children}
+        </SearchContext.Provider>
     );
 };
 
-export default SearchContainer;
+const SearchInput = () => <SearchContext.Consumer>
+    {({ search, searchQuery, setSearchQuery, setSearchResults }) => (
+        <form onSubmit={event => event.preventDefault()}>
+            <input
+                onChange={event => {
+                    setSearchResults(search.search(event.target.value));
+                    setSearchQuery(event.target.value);
+                }}
+                placeholder="Search"
+                style={styles.input}
+                value={searchQuery} />
+        </form>
+    )}
+</SearchContext.Consumer>;
+
+const styles = {
+    root: {
+        position: "relative",
+    },
+
+    input: {
+        backgroundColor: "inherit",
+        borderBottom: "1px solid #DEDEDE",
+        borderLeft: "none",
+        borderRight: "none",
+        borderTop: "none",
+        color: "inherit",
+        fontFamily: "inherit",
+        fontSize: 20,
+    },
+};
+
+export default SearchInput;

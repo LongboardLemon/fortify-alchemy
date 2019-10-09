@@ -7,8 +7,8 @@ const CustomLink = ({ children, style, ...button }) => {
         <Link
             style={Object.assign({},
                 styles.root,
-                hover && styles.hover,
-                style
+                hover && style && style.hover,
+                style && style.root
             )}
             onMouseEnter={() => setHover(true)}
             onMouseLeave={() => setHover(false)}
@@ -30,11 +30,9 @@ const styles = {
         margin: 0,
         padding: 0,
         textDecoration: "none",
+        textShadow: "0 1px 5px black",
         transition: "all .1s ease-in",
     },
-    hover: {
-        textDecoration: "underline",
-    }
 };
 
 export default CustomLink;

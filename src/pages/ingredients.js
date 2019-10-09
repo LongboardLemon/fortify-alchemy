@@ -15,7 +15,6 @@ export const pageQuery = graphql`
         allIngredientsJson {
             edges {
                 node {
-                    description
                     effects {
                         name
                         poison

@@ -1,15 +1,22 @@
 import React from "react";
 
 import Navigation from "./Navigation";
+import { SearchStore } from "./SearchInput";
+import Sidebar from "./Sidebar";
 import "../css/index.css";
 
 const Layout = ({ children }) => (
-    <div style={styles.root}>
-        <Navigation />
-        <div style={styles.body}>
-            {children}
+    <SearchStore>
+        <div style={styles.root}>
+            <Navigation />
+            <div style={styles.body}>
+                <Sidebar />
+                <div style={styles.content}>
+                    {children}
+                </div>
+            </div>
         </div>
-    </div>
+    </SearchStore>
 );
 
 const styles = {
@@ -20,6 +27,8 @@ const styles = {
     },
     body: {
         display: "flex",
+    },
+    content: {
         paddingBottom: 16,
         paddingLeft: 16,
         paddingRight: 16,

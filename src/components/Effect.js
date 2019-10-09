@@ -32,8 +32,11 @@ export const pageQuery = graphql`
                         poison
                         slug
                     }
+                    itemID
                     name
                     slug
+                    value
+                    weight
                 }
             }
         }

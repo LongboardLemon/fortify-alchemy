@@ -31,8 +31,9 @@ const IngredientTile = props => {
 
 const styles = {
     root: {
-        border: "1px solid black",
-        flexBasis: 240,
+        backgroundColor: "#1E1E1E",
+        boxShadow: "0 1px 5px 1px rgba(0, 0, 0, .5)",
+        flexBasis: 280,
         margin: 8,
         paddingBottom: 8,
         paddingLeft: 16,
