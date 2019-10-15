@@ -1,28 +1,35 @@
 import React, { useState } from "react";
-import { Link } from "gatsby";
+import { Link as GatsbyLink } from "gatsby";
+import Link from "@material-ui/core/Link";
+import { makeStyles } from "@material-ui/styles";
 
-const CustomLink = ({ children, style, ...button }) => {
+const CustomLink = React.forwardRef(({ children, style, ...props }, ref) => {
     let [hover, setHover] = useState(false);
+    let styles = stylesLink();
+    let stylesArray = [
+        styles.root,
+        hover && style && style.hover,
+        style && style.root
+    ];
     return (
         <Link
-            style={Object.assign({},
-                styles.root,
-                hover && style && style.hover,
-                style && style.root
-            )}
+            className={stylesArray.join(" ")}
+            component={React.forwardRef((linkProps, linkRef) => (
+                <GatsbyLink innerRef={linkRef} {...linkProps} />
+            ))}
             onMouseEnter={() => setHover(true)}
             onMouseLeave={() => setHover(false)}
-            {...button}>
+            ref={ref}
+            {...props}>
             {children}
         </Link>
     );
-};
+});
 
-const styles = {
+const stylesLink = makeStyles(theme => ({
     root: {
         backgroundColor: "inherit",
         border: "none",
-        color: "inherit",
         cursor: "pointer",
         display: "inline-block",
         fontFamily: "inherit",
@@ -33,6 +40,6 @@ const styles = {
         textShadow: "0 1px 5px black",
         transition: "all .1s ease-in",
     },
-};
+}));
 
 export default CustomLink;
