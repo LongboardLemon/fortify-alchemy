@@ -1,6 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { graphql, useStaticQuery } from "gatsby";
 import * as JsSearch from "js-search";
+import { InputAdornment, TextField } from "@material-ui/core";
+import { makeStyles } from "@material-ui/styles";
+
+import { SearchIcon } from "./icons";
 
 export const SearchContext = React.createContext();
 export const SearchStore = ({ children }) => {
@@ -55,36 +59,46 @@ export const SearchStore = ({ children }) => {
     );
 };
 
-const SearchInput = () => <SearchContext.Consumer>
-    {({ search, searchQuery, setSearchQuery, setSearchResults }) => (
-        <form onSubmit={event => event.preventDefault()}>
-            <input
-                onChange={event => {
-                    setSearchResults(search.search(event.target.value));
-                    setSearchQuery(event.target.value);
-                }}
-                placeholder="Search"
-                style={styles.input}
-                value={searchQuery} />
-        </form>
-    )}
-</SearchContext.Consumer>;
+const SearchInput = React.forwardRef((props, ref) => {
+    let styles = searchStyles();
+    return (
+        <SearchContext.Consumer>
+            {({ search, searchQuery, setSearchQuery, setSearchResults }) => (
+                <form
+                    className={styles.form}
+                    onSubmit={event => event.preventDefault()}>
+                    <TextField
+                        autoFocus
+                        className={styles.input}
+                        hiddenLabel={true}
+                        InputProps={{
+                            inputProps: { "aria-label": "search" },
+                            startAdornment: (
+                                <InputAdornment position="start">
+                                    <SearchIcon />
+                                </InputAdornment>
+                            ),
+                        }}
+                        inputRef={ref}
+                        onChange={event => {
+                            setSearchResults(search.search(event.target.value));
+                            setSearchQuery(event.target.value);
+                        }}
+                        placeholder="Search"
+                        value={searchQuery} />
+                </form>
+            )}
+        </SearchContext.Consumer>
+    );
+});
 
-const styles = {
-    root: {
-        position: "relative",
+const searchStyles = makeStyles(theme => ({
+    form: {
+        margin: theme.spacing(2),
     },
-
     input: {
-        backgroundColor: "inherit",
-        borderBottom: "1px solid #DEDEDE",
-        borderLeft: "none",
-        borderRight: "none",
-        borderTop: "none",
-        color: "inherit",
-        fontFamily: "inherit",
-        fontSize: 20,
+        width: "100%",
     },
-};
+}));
 
 export default SearchInput;

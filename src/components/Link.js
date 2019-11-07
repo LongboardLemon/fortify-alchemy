@@ -5,7 +5,7 @@ import { makeStyles } from "@material-ui/styles";
 
 const CustomLink = React.forwardRef(({ children, style, ...props }, ref) => {
     let [hover, setHover] = useState(false);
-    let styles = stylesLink();
+    let styles = linkStyles();
     let stylesArray = [
         styles.root,
         hover && style && style.hover,
@@ -26,7 +26,7 @@ const CustomLink = React.forwardRef(({ children, style, ...props }, ref) => {
     );
 });
 
-const stylesLink = makeStyles(theme => ({
+const linkStyles = makeStyles(theme => ({
     root: {
         backgroundColor: "inherit",
         border: "none",
