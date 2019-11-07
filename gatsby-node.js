@@ -26,11 +26,37 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
             name: String!
             itemID: String
             slug: String @slug
+            type: String
             value: Int
             weight: Float
         }
     `;
     actions.createTypes(typeDefs);
+}
+
+exports.createResolvers = ({ createResolvers }) => {
+    const resolvers = {
+        effectsJson: {
+            ingredients: {
+                type: ["ingredientsJson"],
+                resolve(source, args, context, info) {
+                    return context.nodeModel.runQuery({
+                        query: {
+                            filter: {
+                                effects: {
+                                    elemMatch: {
+                                        id: { eq: source.id },
+                                    },
+                                },
+                            },
+                        },
+                        type: "ingredientsJson",
+                    });
+                },
+            },
+        },
+    };
+    createResolvers(resolvers);
 }
 
 exports.createPages = async ({ graphql, actions }) => {

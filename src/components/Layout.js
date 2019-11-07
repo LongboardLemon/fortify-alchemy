@@ -1,39 +1,46 @@
 import React from "react";
+import { CssBaseline, Container } from "@material-ui/core";
+import { makeStyles, ThemeProvider } from "@material-ui/styles";
 
 import Navigation from "./Navigation";
 import { SearchStore } from "./SearchInput";
-import Sidebar from "./Sidebar";
-import "../css/index.css";
+import themeDark from "../theme";
+import "../theme/index.css";
 
-const Layout = ({ children }) => (
-    <SearchStore>
-        <div style={styles.root}>
+const Layout = ({ children }) => {
+    let styles = layoutStyles();
+    return (
+        <div className={styles.root}>
             <Navigation />
-            <div style={styles.body}>
-                <Sidebar />
-                <div style={styles.content}>
-                    {children}
-                </div>
-            </div>
+            <Container className={styles.body} fixed>
+                {children}
+            </Container>
         </div>
-    </SearchStore>
+    );
+};
+
+const LayoutWrapper = ({ children }) => (
+    <ThemeProvider theme={themeDark}>
+        <CssBaseline />
+        <SearchStore>
+            <Layout>{children}</Layout>
+        </SearchStore>
+    </ThemeProvider>
 );
 
-const styles = {
+const layoutStyles = makeStyles(theme => ({
     root: {
-        backgroundColor: "#3C3C3C",
-        color: "#DEDEDE",
         minHeight: "100%",
     },
     body: {
+        alignItems: "flex-start",
         display: "flex",
-    },
-    content: {
+        flexDirection: "column",
         paddingBottom: 16,
         paddingLeft: 16,
         paddingRight: 16,
         paddingTop: 16,
     },
-};
+}));
 
-export default Layout;
+export default LayoutWrapper;

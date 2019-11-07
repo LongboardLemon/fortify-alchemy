@@ -201,7 +201,7 @@
         "description": "Increases the Intelligence multiplier used to determine the target's maximum Magicka.",
         "effect": "Fortify Maximum Magicka M/10 x INT",
         "name": "Fortify Maximum Magicka",
-        "school": ""
+        "school": "Restoration"
     }, {
         "description": "Temporarily raises the target's Personality attribute by M points for D seconds.",
         "effect": "Fortify Personality M points for D seconds",
@@ -369,7 +369,7 @@
         "description": "Returns the target's Willpower attribute to its normal value.",
         "effect": "Restore Willpower M points for D seconds",
         "name": "Restore Willpower",
-        "school": "ResRestoration"
+        "school": "Restoration"
     }, {
         "description": "Gives a M% chance that incoming spells will be absorbed, and their casting cost will be used to restore the target's Magicka pool instead of taking effect.",
         "effect": "Spell Absorption M points for D seconds",

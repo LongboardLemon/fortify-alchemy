@@ -1,13 +1,12 @@
 import React from "react";
 import { graphql } from "gatsby";
 
+import EffectGrid from "../components/EffectGrid";
 import Layout from "../components/Layout";
 
 const Effects = ({ data }) => (
     <Layout>
-        {data && data.allEffectsJson.edges.map((effect, i) => (
-            <div>{effect.node.name}</div>
-        ))}
+        <EffectGrid effects={data.allEffectsJson.edges} />
     </Layout>
 );
 
@@ -18,6 +17,8 @@ export const pageQuery = graphql`
                 node {
                     effect
                     name
+                    poison
+                    school
                     slug
                 }
             }

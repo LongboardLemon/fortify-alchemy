@@ -15,17 +15,7 @@ export const pageQuery = graphql`
         allIngredientsJson {
             edges {
                 node {
-                    effects {
-                        name
-                        poison
-                        slug
-                    }
-                    id
-                    itemID
-                    name
-                    slug
-                    value
-                    weight
+                    ...ingredientTile
                 }
             }
         }
