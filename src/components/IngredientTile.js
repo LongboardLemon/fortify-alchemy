@@ -1,44 +1,89 @@
 import React from "react";
+import { graphql } from "gatsby";
+import { Card, CardContent, CardHeader } from "@material-ui/core";
+import { makeStyles } from "@material-ui/styles";
 
+import IngredientAvatar from "./IngredientAvatar";
 import Link from "./Link";
 import valueIcon from "../images/value-icon.png";
 import weightIcon from "../images/weight-icon.png";
 
-const IngredientTile = props => {
+export const IngredientAttributes = props => {
+    let styles = ingredientTileStyles();
     return (
-        <div style={styles.root}>
-            <Link style={styles.title} to={`/ingredient/${props.slug}`}>
-                {props.name}
-            </Link>
-            <div style={styles.attributes}>
-                {props.value && <div style={styles.attributeWrapper}>
-                    <img alt="Value" src={valueIcon} style={styles.attributeImage} />
-                    <p style={styles.attribute}>{props.value}</p>
-                </div>}
-                {props.weight && <div style={styles.attributeWrapper}>
-                    <img alt="Weight" src={weightIcon} style={styles.attributeImage} />
-                    <p style={styles.attribute}>{props.weight}</p>
-                </div>}
-            </div>
-            <div style={styles.effectWrapper}>
-                {props.effects.map((effect, i) => (
-                    <Link key={i} style={styles.effect} to={`/effect/${effect.slug}`}>{effect.name}</Link>
-                ))}
-            </div>
-        </div>
+        <React.Fragment>
+            {props.value && <div className={styles.attributeWrapper}>
+                <img
+                    alt="Value"
+                    className={styles.attributeImage}
+                    src={valueIcon} />
+                <p className={styles.attribute}>{props.value}</p>
+            </div>}
+            {props.weight && <div className={styles.attributeWrapper}>
+                <img
+                    alt="Weight"
+                    className={styles.attributeImage}
+                    src={weightIcon} />
+                <p className={styles.attribute}>{props.weight}</p>
+            </div>}
+        </React.Fragment>
     );
 };
 
-const styles = {
+const IngredientTile = props => {
+    let styles = ingredientTileStyles();
+    return (
+        <Card className={styles.root} raised>
+            <CardHeader
+                avatar={
+                    <IngredientAvatar
+                        alt={props.name}
+                        iconProps={{ color: "primary" }}
+                        type={props.type} />
+                }
+                classes={{
+                    subheader: styles.attributes,
+                    title: styles.title
+                }}
+                subheader={
+                    <IngredientAttributes
+                        value={props.value}
+                        weight={props.weight} />
+                }
+                title={
+                    <Link to={`/ingredient/${props.slug}`}>
+                        {props.name}
+                    </Link>
+                } />
+            <CardContent className={styles.effectWrapper}>
+                {props.effects.map((effect, i) => (
+                    <Link
+                        key={i}
+                        style={styles.effect}
+                        to={`/effect/${effect.slug}`}>
+                        {effect.name}
+                    </Link>
+                ))}
+            </CardContent>
+        </Card>
+    );
+};
+
+const ingredientTileStyles = makeStyles(theme => ({
     root: {
-        backgroundColor: "#1E1E1E",
-        boxShadow: "0 1px 5px 1px rgba(0, 0, 0, .5)",
-        flexBasis: 280,
-        margin: 8,
-        paddingBottom: 8,
-        paddingLeft: 16,
-        paddingRight: 16,
-        paddingTop: 16,
+        flexBasis: 300,
+        margin: theme.spacing(1),
+        padding: theme.spacing(1, 2),
+        [theme.breakpoints.down("md")]: {
+            flexBasis: 298,
+        },
+        [theme.breakpoints.down("sm")]: {
+            flexBasis: 276,
+        },
+        [theme.breakpoints.down("xs")]: {
+            flexBasis: "auto",
+            width: "100%",
+        },
     },
 
     attribute: {
@@ -51,7 +96,6 @@ const styles = {
     },
     attributes: {
         display: "flex",
-        marginBottom: 8,
     },
     attributeImage: {
         height: 24,
@@ -64,24 +108,34 @@ const styles = {
     },
 
     effect: {
-        alignSelf: "center",
-        flexBasis: "50%",
-        paddingBottom: 8,
-        paddingLeft: 4,
-        paddingRight: 4,
-        paddingTop: 8,
-        textAlign: "center",
+        padding: theme.spacing(2, 1),
     },
     effectWrapper: {
         display: "flex",
-        flexWrap: "wrap",
+        flexDirection: "column",
     },
 
     title: {
         fontFamily: "AlmendraSC",
         fontSize: 20,
-        marginBottom: 16,
     },
-};
+}));
 
 export default IngredientTile;
+
+export const ingredientTileFragment = graphql`
+    fragment ingredientTile on ingredientsJson {
+        effects {
+            name
+            poison
+            slug
+        }
+        id
+        itemID
+        name
+        slug
+        type
+        value
+        weight
+    }
+`;
