@@ -1,11 +1,12 @@
 import React from "react";
 import { Avatar } from "@material-ui/core";
 
-import { BeastIcon, MushroomIcon, PreciousIcon, SaltIcon } from "./icons";
+import { FaunaIcon, FloraIcon, MushroomIcon, PreciousIcon, SaltIcon } from "./icons";
 
 const IngredientAvatar = ({ iconProps, type, ...props }) => {
     let ingredientIcons = {
-        beast: BeastIcon,
+        fauna: FaunaIcon,
+        flora: FloraIcon,
         mushroom: MushroomIcon,
         precious: PreciousIcon,
         salt: SaltIcon,

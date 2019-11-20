@@ -5,25 +5,24 @@ import { makeStyles } from "@material-ui/styles";
 
 import IngredientAvatar from "./IngredientAvatar";
 import Link from "./Link";
-import valueIcon from "../images/value-icon.png";
-import weightIcon from "../images/weight-icon.png";
+import { SeptimIcon, WeightIcon } from "./icons";
 
 export const IngredientAttributes = props => {
     let styles = ingredientTileStyles();
     return (
         <React.Fragment>
             {props.value && <div className={styles.attributeWrapper}>
-                <img
+                <SeptimIcon
                     alt="Value"
                     className={styles.attributeImage}
-                    src={valueIcon} />
+                    color="primary" />
                 <p className={styles.attribute}>{props.value}</p>
             </div>}
             {props.weight && <div className={styles.attributeWrapper}>
-                <img
+                <WeightIcon
                     alt="Weight"
                     className={styles.attributeImage}
-                    src={weightIcon} />
+                    color="primary" />
                 <p className={styles.attribute}>{props.weight}</p>
             </div>}
         </React.Fragment>
@@ -88,18 +87,18 @@ const ingredientTileStyles = makeStyles(theme => ({
 
     attribute: {
         display: "inline-block",
-        height: 24,
-        lineHeight: "24px",
-        paddingTop: 4,
+        height: 20,
+        lineHeight: "20px",
+        paddingBottom: 4,
         paddingLeft: 16,
-        paddingBottom: 8,
+        paddingTop: 4,
     },
     attributes: {
         display: "flex",
     },
     attributeImage: {
-        height: 24,
-        width: 24,
+        height: 20,
+        width: 20,
     },
     attributeWrapper: {
         alignItems: "center",
@@ -118,6 +117,7 @@ const ingredientTileStyles = makeStyles(theme => ({
     title: {
         fontFamily: "AlmendraSC",
         fontSize: 20,
+        marginBottom: 4,
     },
 }));
 
