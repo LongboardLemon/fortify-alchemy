@@ -9,6 +9,7 @@ A simple alchemy tool for TES III: Morrowind
 Clone the repository and navigate into the Fortify Alchemy directory and start it up.
 
 ```sh
+git clone git@github.com:LongboardLemon/fortify-alchemy.git
 cd fortify-alchemy/
 gatsby start
 ```
